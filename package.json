@@ -1,0 +1,19 @@
+{
+  "name": "generative-layout-experiments",
+  "version": "1.0.0",
+  "main": "./dist/gl.cjs.js",
+  "module": "./dist/gl.es.js",
+  "types": "./types/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}
