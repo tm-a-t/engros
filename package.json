@@ -21,6 +21,7 @@
   "dependencies": {
     "@fontsource-variable/golos-text": "^5.1.0",
     "@fontsource/pt-mono": "^5.1.0",
-    "@mozilla/readability": "^0.5.0"
+    "@mozilla/readability": "^0.5.0",
+    "tsx-dom": "^3.0.1"
   }
 }

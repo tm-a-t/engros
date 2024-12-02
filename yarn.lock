@@ -345,6 +345,18 @@ source-map-js@^1.2.1:
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.2.1.tgz#1ce5650fddd87abc099eda37dcff024c2667ae46"
   integrity sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==
 
+tsx-dom-types@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/tsx-dom-types/-/tsx-dom-types-2.0.1.tgz#5457a47d8b0c834ae5bbb22bc65fddb28e126287"
+  integrity sha512-QK2lrGRR9KpF7oju04YSGNiHFgt4Sl1NIH/8989JlYzO7oR4XYhWIus2ySm2130DmHZubRx3tD4vxl6L9iO68Q==
+
+tsx-dom@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/tsx-dom/-/tsx-dom-3.0.1.tgz#06798913d2e2ffd2599137ee8e8304cc2b3f691b"
+  integrity sha512-7I3ub6mNVCDbhFI1odqkOlFGgyktF11zgOlMD1bOfGnxTpLdCtcAPwn2xMRuI1uEQlwoZykcGM/UDath3sT4CA==
+  dependencies:
+    tsx-dom-types "2.0.1"
+
 typescript@^5.6.3:
   version "5.7.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.7.2.tgz#3169cf8c4c8a828cde53ba9ecb3d2b1d5dd67be6"
