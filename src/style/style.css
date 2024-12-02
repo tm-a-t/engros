@@ -22,7 +22,7 @@
     }
 
     body {
-        font-size: 1.125rem;
+        /*font-size: 1.125rem;*/
         overflow-x: hidden;
     }
 
@@ -50,7 +50,7 @@
 
 @layer components {
     .container {
-        height: 100vh;
+        height: 100svh;
         scroll-behavior: smooth;
         overflow: auto;
         scroll-snap-type: y mandatory;
@@ -62,7 +62,7 @@
 
     .slide {
         width: 100%;
-        min-height: 100vh;
+        min-height: 100svh;
         scroll-snap-align: start;
         overflow-x: hidden;
 
@@ -73,6 +73,6 @@
         flex-direction: column;
         justify-content: center;
 
-        row-gap: 1.5rem;
+        row-gap: 1rem;
     }
 }

@@ -1,18 +1,8 @@
 import {Readability} from '@mozilla/readability';
-import {h} from 'tsx-dom';
+import * as React from '@turtlemay/jsx-dom'
 
 export default function build(html: string): Node {
   const document = Document.parseHTMLUnsafe(html);
-
-  document.querySelectorAll('h2').forEach(h2 => {
-    const p = document.createElement('p');
-    for (const {name, value} of h2.attributes) {
-      p.setAttribute(name, value);
-    }
-    p.classList.add('layout-h2');
-    p.innerHTML = h2.innerHTML;
-    h2.replaceWith(p);
-  });
 
   const readability = new Readability(
     document,
@@ -26,15 +16,6 @@ export default function build(html: string): Node {
   const container = <div class="container">
     {buildSlides(elements)}
   </div>;
-
-  // const slides = groupedElements
-  //   .map(elements => {
-  //     const slide = document.createElement('div');
-  //     slide.classList.add('slide');
-  //     slide.replaceChildren(...elements);
-  //     return slide;
-  //   });
-  // container.append(...slides);
 
   return container;
 }
@@ -96,11 +77,23 @@ const LAYOUTS: Layout[] = [
   {
     isApplicable: nodes => nodes.length === 2,
     apply: nodes =>
-      <div class="slide bg-blue-500 px-2 gap-y-3">
-        <div class="bg-white mr-4 px-6 py-5 rounded-xl">
+      <div class="slide bg-violet-500 justify-between px-3">
+        <div class="bg-white px-4 py-6 rounded-xl">
           {nodes[0]}
         </div>
-        <div class="bg-white ml-4 px-6 py-5 rounded-xl">
+        <div class="bg-white px-4 py-6 rounded-xl">
+          {nodes[1]}
+        </div>
+      </div>,
+  },
+  {
+    isApplicable: nodes => nodes.length === 2,
+    apply: nodes =>
+      <div class="slide bg-blue-500 px-2 gap-y-0">
+        <div class="bg-white mr-6 px-4 py-6 rounded-xl rounded-br-none">
+          {nodes[0]}
+        </div>
+        <div class="bg-white ml-6 px-4 py-6 rounded-xl rounded-tl-none -mt-6">
           {nodes[1]}
         </div>
       </div>,

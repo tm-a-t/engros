@@ -297,6 +297,11 @@
   resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.27.4.tgz#67d516613c9f2fe42e2d8b78e252d0003179d92c"
   integrity sha512-3j4jx1TppORdTAoBJRd+/wJRGCPC0ETWkXOecJ6PPZLj6SptXkrXcNqdj0oclbKML6FkQltdz7bBA3rUSirZug==
 
+"@turtlemay/jsx-dom@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@turtlemay/jsx-dom/-/jsx-dom-1.1.3.tgz#e2ecdfead7c23b7081fec14d6b1bc8853bfddf24"
+  integrity sha512-haXToX6HEbMPkNrLn8Rze6Sqgg6eEEWTwFMEMwi/S1uj8dKOd+8dtWyZ7hVeg5xq0FBd7598PeQNLHuHtbl4PQ==
+
 "@types/estree@1.0.6":
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.6.tgz#628effeeae2064a1b4e79f78e81d87b7e5fc7b50"
@@ -1065,18 +1070,6 @@ ts-interface-checker@^0.1.9:
   version "0.1.13"
   resolved "https://registry.yarnpkg.com/ts-interface-checker/-/ts-interface-checker-0.1.13.tgz#784fd3d679722bc103b1b4b8030bcddb5db2a699"
   integrity sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==
-
-tsx-dom-types@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/tsx-dom-types/-/tsx-dom-types-2.0.1.tgz#5457a47d8b0c834ae5bbb22bc65fddb28e126287"
-  integrity sha512-QK2lrGRR9KpF7oju04YSGNiHFgt4Sl1NIH/8989JlYzO7oR4XYhWIus2ySm2130DmHZubRx3tD4vxl6L9iO68Q==
-
-tsx-dom@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/tsx-dom/-/tsx-dom-3.0.1.tgz#06798913d2e2ffd2599137ee8e8304cc2b3f691b"
-  integrity sha512-7I3ub6mNVCDbhFI1odqkOlFGgyktF11zgOlMD1bOfGnxTpLdCtcAPwn2xMRuI1uEQlwoZykcGM/UDath3sT4CA==
-  dependencies:
-    tsx-dom-types "2.0.1"
 
 typescript@^5.6.3:
   version "5.7.2"
