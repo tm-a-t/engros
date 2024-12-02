@@ -1,0 +1,78 @@
+@import "fonts.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        margin: 0;
+        padding: 0;
+        font: inherit;
+        box-sizing: border-box;
+    }
+
+    :root {
+        font-family: 'Golos Text Variable', sans-serif;
+        line-height: 1.225;
+
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+        font-size: 1.125rem;
+        overflow-x: hidden;
+    }
+
+    pre {
+        font-family: 'PT Mono', monospace;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    code {
+        font-family: 'PT Mono', monospace;
+        margin: 0 .125rem;
+    }
+
+    ul {
+        padding-left: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: -0.005em;
+    }
+}
+
+@layer components {
+    .container {
+        height: 100vh;
+        scroll-behavior: smooth;
+        overflow: auto;
+        scroll-snap-type: y mandatory;
+
+        /* To display as a mobile screen on desktop */
+        max-width: 28rem;
+        margin: 0 auto;
+    }
+
+    .slide {
+        width: 100%;
+        min-height: 100vh;
+        scroll-snap-align: start;
+        overflow-x: hidden;
+
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        row-gap: 1.5rem;
+    }
+}
