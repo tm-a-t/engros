@@ -61,6 +61,7 @@
     }
 
     .slide {
+        position: relative;
         width: 100%;
         min-height: 100svh;
         scroll-snap-align: start;
@@ -74,5 +75,9 @@
         justify-content: center;
 
         row-gap: 1rem;
+    }
+
+    .hydra-canvas {
+        @apply absolute -z-10 top-0 bottom-0 left-0 right-0 w-full h-full;
     }
 }
