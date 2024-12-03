@@ -10,7 +10,7 @@
     <script type="module">
       import build from '../src/index.tsx';
 
-      const res = await fetch('./orig.html');
+      const res = await fetch('./testcases/wikibooks.txt');
       const html = await res.text();
       document.body.replaceChildren(build(html));
     </script>
