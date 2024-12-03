@@ -17,7 +17,6 @@ export default function build(html: string): Node {
   const container = <div class="container">
     {buildSlides(elements)}
   </div>;
-
   return container;
 }
 
@@ -82,17 +81,35 @@ function groupElements(elements: Node[]): Node[][] {
 
   const groupedElements: Node[][] = [[]];
   for (const element of elements) {
-    const group = groupedElements[groupedElements.length - 1];
-    const groupWithCurrentElement = [...group, element];
+    const lastGroup = groupedElements[groupedElements.length - 1];
+    const groupWithCurrentElement = [...lastGroup, element];
     if (
-      groupWithCurrentElement.length > MAX_ELEMENTS
+      isHeading(element)
+      || groupWithCurrentElement.length > MAX_ELEMENTS
       || sum(groupWithCurrentElement.map(el => el.textContent?.length ?? 0)) > MAX_LETTERS
     ) {
       // Start a new group
-      groupedElements.push([element]);
+      const newGroup = [];
+
+      const lastGroupCurryElements = [];
+      while (lastGroup.length && (
+        last(lastGroup).textContent?.endsWith(':')
+        || isHeading(last(lastGroup)))
+      ) {
+        lastGroupCurryElements.push(last(lastGroup));
+        lastGroup.pop();
+      }
+      if (lastGroup.length === 0) {
+        // Remove lastGroup
+        groupedElements.pop();
+      }
+      newGroup.push(...lastGroupCurryElements.reverse());
+
+      newGroup.push(element);
+      groupedElements.push(newGroup);
     } else {
       // Add to the existing group
-      group.push(element);
+      lastGroup.push(element);
     }
   }
   return groupedElements;
@@ -102,6 +119,14 @@ function sum(array: number[]) {
   return array.reduce((partialSum, value) => partialSum + value, 0);
 }
 
+function last<T>(array: T[]): T {
+  return array[array.length - 1];
+}
+
+function isHeading(element: Node): boolean {
+  return ['H1', 'H2', 'H3', 'H4', 'H5', 'H6'].includes(element.nodeName)
+}
+
 type Layout = {
   isApplicable: (nodes: Node[]) => boolean
   apply: (nodes: Node[]) => Node
@@ -109,14 +134,14 @@ type Layout = {
 
 const LAYOUTS: Layout[] = [
   {
-    isApplicable: nodes => nodes.length === 2,
+    isApplicable: nodes => nodes.length === 2 && (nodes[0].textContent?.length ?? 0) + (nodes[1].textContent?.length ?? 0) < 512,
     apply: nodes =>
-      <div class="slide justify-between px-3">
+      <div class="slide px-3 bg-rose-500 gap-y-4">
         <canvas class="hydra-canvas"></canvas>
-        <div class="bg-white px-4 py-6 rounded-xl">
+        <div class="bg-white px-4 py-6 ml-2 rounded-xl rotate-1">
           {nodes[0]}
         </div>
-        <div class="bg-white px-4 py-6 rounded-xl">
+        <div class="bg-white px-4 py-6 mr-2 rounded-xl -rotate-2">
           {nodes[1]}
         </div>
       </div>,
@@ -124,7 +149,7 @@ const LAYOUTS: Layout[] = [
   {
     isApplicable: nodes => nodes.length === 2,
     apply: nodes =>
-      <div class="slide px-2 gap-y-0">
+      <div class="slide px-2 gap-y-0 bg-blue-500">
         <canvas class="hydra-canvas"></canvas>
         <div class="bg-white mr-6 px-4 py-6 rounded-xl rounded-br-none">
           {nodes[0]}
@@ -135,10 +160,12 @@ const LAYOUTS: Layout[] = [
       </div>,
   },
   {
-    isApplicable: nodes => nodes.length === 1,
+    isApplicable: nodes => nodes.length === 1 && (nodes[0].textContent?.length ?? 0) < 512,
     apply: nodes =>
-      <div class="slide bg-fuchsia-700 text-2xl text-white px-4 leading-8">
-        {nodes}
+      <div class="slide bg-violet-500 text-2xl leading-8">
+        <div class="bg-white px-4 py-6">
+          {nodes}
+        </div>
       </div>,
   },
   {

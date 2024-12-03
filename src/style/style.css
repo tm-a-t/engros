@@ -4,13 +4,6 @@
 @tailwind utilities;
 
 @layer base {
-    * {
-        margin: 0;
-        padding: 0;
-        font: inherit;
-        box-sizing: border-box;
-    }
-
     :root {
         font-family: 'Golos Text Variable', sans-serif;
         line-height: 1.225;
@@ -42,9 +35,31 @@
     }
 
     h1 {
-        font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: -0.005em;
+        @apply text-6xl font-bold tracking-tight;
+    }
+
+    h2 {
+        @apply text-4xl font-bold tracking-tight;
+    }
+
+    h3 {
+        @apply text-2xl
+    }
+
+    h4 {
+        @apply text-xl
+    }
+
+    h5, h6 {
+        @apply text-lg
+    }
+
+    a {
+        @apply text-blue-600
+    }
+
+    a:hover {
+        @apply text-blue-400
     }
 }
 
