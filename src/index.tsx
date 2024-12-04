@@ -3,7 +3,9 @@ import Hydra from 'hydra-synth';
 import * as React from '@turtlemay/jsx-dom';
 
 export default function build(html: string): Node {
-  const document = Document.parseHTMLUnsafe(html);
+  const document = preprocessHeaders(
+    Document.parseHTMLUnsafe(html)
+  );
 
   const readability = new Readability(
     document,
@@ -53,6 +55,57 @@ function addHydra(container: DocumentFragment) {
     });
   });
 }
+function preprocessHeaders(
+  document: Document,
+  mustPruneInsideHeaders: boolean = false,
+  mustPruneHeaderDivs: boolean = true
+): Document {
+  const BROKEN_HEADER_CLASSES = ['mw-heading']
+
+  const cleanHeaderMutatation = (header: Element): void => {
+
+    header.removeAttribute("class");
+    header.removeAttribute("id");
+
+    // readability.js detects smth else inside <h1> ~~> pruned
+    const textContent  = header.textContent;
+    while (header.firstChild) {
+      header.removeChild(header.firstChild);
+    }
+
+    header.textContent = textContent
+  }
+
+  const cleanDivHeaderMutation = (div: Element): void => {
+    const headers = [...div.childNodes]
+      .filter(node =>
+        node instanceof Element &&
+        node.matches("h1, h2, h3, h4, h5, h6")
+      );
+
+    div.innerHTML = '';
+    headers.forEach(header => div.appendChild(header));
+  }
+
+  const modifiedDocument = document.cloneNode(true) as Document;
+  if (mustPruneInsideHeaders) {
+    [...modifiedDocument.querySelectorAll("h1, h2, h3, h4, h5, h6")]
+      .forEach(cleanHeaderMutatation);
+  }
+
+  if (mustPruneHeaderDivs) {
+    [...modifiedDocument.querySelectorAll("div")]
+      .filter(div =>
+        BROKEN_HEADER_CLASSES.some(className =>
+          div.classList.contains(className)
+        ) &&
+        div.querySelector('h1, h2, h3, h4, h5, h6'))
+      .forEach(cleanDivHeaderMutation);
+  }
+
+  return modifiedDocument;
+}
+
 
 function buildSlides(elements: Node[]): Node[] {
   const groups = groupElements(elements);
