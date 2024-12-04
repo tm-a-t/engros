@@ -1,5 +1,7 @@
 import {Readability} from '@mozilla/readability';
-import * as React from '@turtlemay/jsx-dom'
+import * as React from '@turtlemay/jsx-dom';
+import * as THREE from 'three';
+import FOG from 'vanta/dist/vanta.fog.min';
 
 export default function build(html: string): Node {
   const document = preprocessHeaders(
@@ -19,7 +21,28 @@ export default function build(html: string): Node {
     {buildSlides(elements)}
   </div>;
 
+  activateVanta(container);
+
   return container;
+}
+
+function activateVanta(container: JSX.Element) {
+  let vantaActivated = false;
+  container.addEventListener('mousemove', () => {
+    if (vantaActivated) return;
+    vantaActivated = true;
+    container.querySelectorAll('.vanta-fog').forEach((animationContainer, i) => {
+      FOG({
+        el: animationContainer as HTMLElement,
+        THREE,
+        mouseControls: true,
+        touchControls: true,  
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00
+      });
+    });
+  });
 }
 
 function preprocessHeaders(
@@ -130,7 +153,7 @@ const LAYOUTS: Layout[] = [
   {
     isApplicable: nodes => nodes.length === 2,
     apply: nodes =>
-      <div class="slide bg-violet-500 justify-between px-3">
+      <div class="slide vanta-fog justify-between px-3">
         <div class="bg-white px-4 py-6 rounded-xl">
           {nodes[0]}
         </div>
