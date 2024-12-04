@@ -7,8 +7,8 @@ export default defineConfig({
     },
   },
 
-  esbuild: {
-    // jsxFactory: 'DOMCreateElement',
+  define: {
+    global: {}  // Workaround for Hydra: see https://github.com/hydra-synth/hydra-synth?tab=readme-ov-file#vite
   },
 
   build: {
