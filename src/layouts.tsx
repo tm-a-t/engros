@@ -10,7 +10,6 @@ export const LAYOUTS: Layout[] = [
     isApplicable: nodes => nodes.length === 2 && (nodes[0].textContent?.length ?? 0) + (nodes[1].textContent?.length ?? 0) < 512,
     apply: nodes =>
       <div class="slide vanta-fog px-3 bg-rose-500 gap-y-4">
-        <canvas class="hydra-canvas"></canvas>
         <div class="bg-white px-4 py-6 ml-2 rounded-xl rotate-1">
           {nodes[0]}
         </div>
@@ -22,8 +21,7 @@ export const LAYOUTS: Layout[] = [
   {
     isApplicable: nodes => nodes.length === 2,
     apply: nodes =>
-      <div class="slide px-2 gap-y-0 bg-blue-500">
-        <canvas class="hydra-canvas"></canvas>
+      <div class="slide vanta-fog px-2 gap-y-0 bg-blue-500">
         <div class="bg-white mr-6 px-4 py-6 rounded-xl rounded-br-none">
           {nodes[0]}
         </div>

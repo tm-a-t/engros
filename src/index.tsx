@@ -48,15 +48,23 @@ function preprocessHeaders(
     header.textContent = textContent
   }
 
-  const cleanDivHeaderMutation = (div: HTMLElement): void => {
+  const cleanDivHeaderMutation = (div: Element): void => {
     const headers = [...div.childNodes]
       .filter(node =>
-        node instanceof HTMLElement &&
+        node instanceof Element &&
         node.matches("h1, h2, h3, h4, h5, h6")
       );
 
+    
     div.innerHTML = '';
     headers.forEach(header => div.appendChild(header));
+
+    const parent = div.parentNode;
+    if (!parent) return;
+
+    headers.forEach(header => parent.insertBefore(header, div));
+    
+    parent.removeChild(div);
   }
 
   const modifiedDocument = document.cloneNode(true) as Document;
