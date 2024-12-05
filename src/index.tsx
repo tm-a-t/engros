@@ -19,6 +19,14 @@ export default function build(html: string): HTMLElement {
   const rawElements = [...rawContent.childNodes].filter(node => node.nodeType !== Node.TEXT_NODE);
   const elements = [<h1>{readability!.title}</h1>, ...rawElements] as HTMLElement[];
 
+  // Temporary fix
+  if (readability!.title.includes("Wikibooks, open")) {
+    var title = readability!.title.split(" - ")[0];
+    title = title.split("/", 2).join("/ ");
+
+    elements[0] = <h1>{title}</h1> as HTMLElement;
+  }
+
   return <div class="container">
     {buildSlides(elements)}
   </div> as HTMLElement;
