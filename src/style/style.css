@@ -35,7 +35,7 @@
     }
 
     h1 {
-        @apply text-6xl font-bold tracking-tight;
+        @apply text-4xl font-bold tracking-tight;
     }
 
     h2 {
@@ -65,7 +65,7 @@
 
 @layer components {
     .container {
-        height: 100svh;
+        height: 100lvh;
         scroll-behavior: smooth;
         overflow: auto;
         scroll-snap-type: y mandatory;
@@ -78,7 +78,7 @@
     .slide {
         position: relative;
         width: 100%;
-        min-height: 100svh;
+        min-height: 100lvh;
         scroll-snap-align: start;
         overflow-x: hidden;
 
@@ -90,6 +90,10 @@
         justify-content: center;
 
         row-gap: 1rem;
+    }
+
+    .slide canvas {
+        @apply absolute top-0 bottom-0 left-0 right-0 -z-10;
     }
 
     .hydra-canvas {

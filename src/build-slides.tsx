@@ -8,6 +8,8 @@ export function buildSlides(elements: HTMLElement[]): HTMLElement[] {
 
   const groups = groupElements(elements);
 
+  console.log(groups)
+
   const usedLayouts: Layout[] = [];
   const usedBackgrounds: Array<'color' | 'animation'> = [];
   const slides: HTMLElement[] = [];
@@ -56,7 +58,7 @@ function groupElements(elements: HTMLElement[]): HTMLElement[][] {
 
       const lastGroupCurryElements = [];
       while (lastGroup.length && (
-          last(lastGroup).textContent?.endsWith(':')
+          last(lastGroup).textContent?.endsWith(':\n')
           || isHeading(last(lastGroup)))
         ) {
         lastGroupCurryElements.push(last(lastGroup));

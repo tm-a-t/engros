@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generated Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="src/style/style.css">
+
+    <script type="module">
+      import build from '@/index.tsx';
+
+      const res = await fetch('experiments/testcases/wikibooks.txt');
+      const html = await res.text();
+      document.body.replaceChildren(build(html));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

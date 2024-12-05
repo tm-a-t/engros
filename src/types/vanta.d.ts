@@ -16,7 +16,7 @@ declare module 'vanta/dist/vanta.fog.min' {
         zoom?: number;
     }
 
-    const FOG: (options: VantaFogOptions) => void;
+    const FOG: (options: VantaFogOptions) => { destroy: () => void };
     
     export default FOG;
 }
