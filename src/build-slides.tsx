@@ -1,13 +1,18 @@
 import {type Layout, LAYOUTS} from './layouts';
+import * as THREE from 'three';
 import {isHeading, last, sum} from './utils';
+import {addBackground} from './animated-background';
 
-export function buildSlides(elements: HTMLElement[]): JSX.Element[] {
+export function buildSlides(elements: HTMLElement[]): HTMLElement[] {
+  const BACKGROUND_COLOR_CLASSES = ['bg-violet-500', 'bg-blue-500', 'bg-rose-500', 'bg-amber-500'];
+
   const groups = groupElements(elements);
 
   const usedLayouts: Layout[] = [];
-  const slides = [];
+  const usedBackgrounds: Array<'color' | 'animation'> = [];
+  const slides: HTMLElement[] = [];
 
-  for (const groupedElements of groups) {
+  groups.forEach((groupedElements, index) => {
     const layout = LAYOUTS.find(layout =>
         layout.isApplicable(groupedElements) && layout !== usedLayouts[usedLayouts.length - 1],
       )
@@ -16,8 +21,19 @@ export function buildSlides(elements: HTMLElement[]): JSX.Element[] {
       )!;
 
     usedLayouts.push(layout);
-    slides.push(layout.apply(groupedElements));
-  }
+    const slide = layout.apply(groupedElements) as HTMLElement;
+    slides.push(slide);
+
+    const lastBackgrounds = usedBackgrounds.slice(usedBackgrounds.length - 2, usedBackgrounds.length);
+    if ((slide.querySelector('h1,h2,h3,h4,h5,h6,blockquote') !== null && lastBackgrounds.some(bg => bg !== 'animation'))
+      || lastBackgrounds.every(bg => bg !== 'animation')) {
+      usedBackgrounds.push('animation');
+      addBackground(slide);
+    } else {
+      usedBackgrounds.push('color');
+      slide.classList.add(BACKGROUND_COLOR_CLASSES[index % BACKGROUND_COLOR_CLASSES.length]);
+    }
+  });
 
   return slides;
 }

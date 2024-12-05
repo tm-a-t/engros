@@ -18,13 +18,9 @@ export default function build(html: string): HTMLElement {
   const rawElements = [...rawContent.childNodes].filter(node => node.nodeType !== Node.TEXT_NODE);
   const elements = [<h1>{readability!.title}</h1>, ...rawElements] as HTMLElement[];
 
-  const container = <div class="container">
+  return <div class="container">
     {buildSlides(elements)}
   </div> as HTMLElement;
-
-  activateVanta(container);
-
-  return container;
 }
 
 function preprocessHeaders(
