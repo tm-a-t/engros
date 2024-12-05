@@ -3,6 +3,7 @@ import * as React from '@turtlemay/jsx-dom';
 import * as THREE from 'three';
 import FOG from 'vanta/dist/vanta.fog.min';
 import {buildSlides} from './build-slides';
+import { chooseColorFromHueRanges } from './utils';
 
 export default function build(html: string): HTMLElement {
   const document = preprocessHeaders(
@@ -92,6 +93,16 @@ function activateVanta(container: JSX.Element) {
   container.addEventListener('mousemove', () => {
     if (vantaActivated) return;
     vantaActivated = true;
+
+    const lowlightColorRanges = [[0, 251]];
+    const lowlightBase = [100, 50];
+
+    const midtoneColorRanges = [[7, 55]];
+    const midtoneColorBase = [100, 50];
+    
+    const highlightColorRanges = [[0, 50], [246, 342]];
+    const highlightColoBase = [100, 50];
+
     container.querySelectorAll('.vanta-fog').forEach((animationContainer) => {
       FOG({
         el: animationContainer as HTMLElement,
@@ -100,7 +111,10 @@ function activateVanta(container: JSX.Element) {
         touchControls: true,
         gyroControls: false,
         minHeight: 200.00,
-        minWidth: 200.00
+        minWidth: 200.00,
+        lowlightColor: chooseColorFromHueRanges(lowlightColorRanges, lowlightBase[0], lowlightBase[1]),
+        midtoneColor: chooseColorFromHueRanges(midtoneColorRanges, midtoneColorBase[0], midtoneColorBase[1]),
+        highlightColor: chooseColorFromHueRanges(highlightColorRanges, highlightColoBase[0], highlightColoBase[1])
       });
     });
   });
