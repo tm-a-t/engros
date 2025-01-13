@@ -1,6 +1,7 @@
 import {Readability} from '@mozilla/readability';
 import * as React from '@turtlemay/jsx-dom';
 import {buildSlides} from './build-slides';
+import './style/style.css';
 
 export default function build(html: string): HTMLElement {
   const document = preprocessHeaders(

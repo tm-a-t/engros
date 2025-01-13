@@ -1,8 +1,8 @@
 {
-  "name": "generative-layout-experiments",
+  "name": "generative-layout",
   "version": "1.0.0",
-  "main": "./dist/gl.cjs.js",
-  "module": "./dist/gl.es.js",
+  "main": "./dist/generative-layout.umd.cjs",
+  "module": "./dist/generative-layout.js",
   "types": "./types/index.d.ts",
   "scripts": {
     "dev": "vite",
@@ -31,5 +31,15 @@
     "color-convert": "^2.0.1",
     "three": "^0.134.0",
     "vanta": "^0.5.24"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/generative-layout.js",
+      "require": "./dist/generative-layout.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
   }
 }

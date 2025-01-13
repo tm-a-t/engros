@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import { resolve } from 'path';
 
 export default defineConfig({
   resolve: {
@@ -13,9 +14,11 @@ export default defineConfig({
 
   build: {
     lib: {
-      entry: 'src/index.tsx',
-      formats: ['es', 'cjs'],
-      fileName: (format) => `gl.${format}.js`
-    }
+      entry: resolve(__dirname, 'src/index.tsx'),
+      fileName: 'generative-layout',
+      name: 'generative-layout'
+    },
+    cssCodeSplit: false
   }
 });
+
