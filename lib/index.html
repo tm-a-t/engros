@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="src/style/style.css">
 
     <script type="module">
-      import build from '@/index.tsx';
-
+      import engros from '@/index.tsx';
+      const url_ncatlab = 'https://ncatlab.org/nlab/show/sheaf';
+      const url_wikibooks = 'https://en.wikibooks.org/wiki/Haskell/Understanding_monads';
       const res = await fetch('experiments/testcases/wikibooks.txt');
       const html = await res.text();
-      document.body.replaceChildren(build(html));
+      const proxy_url = 'https://generative-layout.tmat.me/';
+
+      document.body.replaceChildren(engros(html, url_wikibooks, proxy_url));
     </script>
 </head>
 <body>

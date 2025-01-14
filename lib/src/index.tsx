@@ -3,7 +3,7 @@ import * as React from '@turtlemay/jsx-dom';
 import {buildSlides} from './build-slides';
 import './style/style.css';
 
-export default function build(html: string): HTMLElement {
+export default function engros(html: string, referenceLink: string, proxyLink: string): HTMLElement {
   const document = preprocessHeaders(
     Document.parseHTMLUnsafe(html),
   );
@@ -11,7 +11,7 @@ export default function build(html: string): HTMLElement {
   // Temporary fix, delete later
   if (!document.querySelector('base')) {
     document.head.insertBefore(<base
-      href="https://en.wikibooks.org/wiki/Haskell/Understanding_monads"/>, document.head.firstChild);
+      href={referenceLink}/>, document.head.firstChild);
   }
 
   const readability = new Readability(
@@ -31,9 +31,44 @@ export default function build(html: string): HTMLElement {
     elements[0] = <h1>{title}</h1> as HTMLElement;
   }
 
+  postprocessAnchorLinks(elements, referenceLink);
+  if (proxyLink) {
+    postprocessRemainingLinks(elements, proxyLink);
+  }
+
   return <div class="container">
     {buildSlides(elements)}
   </div> as HTMLElement;
+}
+
+function postprocessAnchorLinks(elements: HTMLElement[], referenceLink: string) {
+  elements.forEach(readabilityOutputElement => {
+    readabilityOutputElement.querySelectorAll('[href]').forEach(elementWithLink => {
+      const href = elementWithLink.getAttribute('href');
+      if (href && (
+        href.startsWith(`${referenceLink}#`) || 
+        href.startsWith(referenceLink.replace('http:', 'https:') + '#') ||
+        href.startsWith(referenceLink.replace('https:', 'http:') + '#')
+      )) {
+        elementWithLink.setAttribute('href', href.replace(/^.*?#/, '#'));
+      }
+    })
+  })
+}
+
+function postprocessRemainingLinks(elements: HTMLElement[], proxyLink: string) {
+  elements.forEach(readabilityOutputElement => {
+    readabilityOutputElement.querySelectorAll('[href]').forEach(elementWithLink => {
+      const href = elementWithLink.getAttribute('href');
+      if (href && (href.startsWith("https:") || href.startsWith("http:"))) {
+        elementWithLink.setAttribute('href', makeProxyLink(href, proxyLink));
+      }
+    })
+  })
+}
+
+function makeProxyLink(href: string, proxyLink: string): string {
+  return `${proxyLink}${href}`;
 }
 
 function preprocessHeaders(

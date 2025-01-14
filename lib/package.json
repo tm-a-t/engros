@@ -1,8 +1,8 @@
 {
   "name": "generative-layout",
   "version": "1.0.0",
-  "main": "./dist/generative-layout.umd.cjs",
-  "module": "./dist/generative-layout.js",
+  "main": "./dist/engros.umd.cjs",
+  "module": "./dist/engros.js",
   "types": "./types/index.d.ts",
   "scripts": {
     "dev": "vite",
@@ -37,8 +37,8 @@
   ],
   "exports": {
     ".": {
-      "import": "./dist/generative-layout.js",
-      "require": "./dist/generative-layout.umd.cjs"
+      "import": "./dist/engros.js",
+      "require": "./dist/engros.umd.cjs"
     },
     "./style.css": "./dist/style.css"
   }
