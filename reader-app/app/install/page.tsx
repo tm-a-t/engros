@@ -1,6 +1,3 @@
-import Image from "next/image";
-import HomeForm from '@/components/home-form';
-import InstallButton from '@/components/install-button';
 import Link from 'next/link';
 
 export default function Install() {

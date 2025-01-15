@@ -25,7 +25,7 @@ export default function Viewer({originalHTML, url}: {originalHTML: string, url: 
     if (containerRef.current) {
       containerRef.current.appendChild(content);
     }
-  }, [origin]);
+  }, [origin, originalHTML, url]);
 
   return (
     <div ref={containerRef}></div>
