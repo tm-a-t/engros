@@ -1,5 +1,6 @@
 import {redirect} from 'next/navigation';
 
-export default function Share({searchParams}: { searchParams: {link: string} }) {
-  redirect('/' + decodeURI(searchParams.link))
+export default async function Share({searchParams}: { searchParams: Promise<{ link: string }> }) {
+  const {link} = await searchParams;
+  redirect('/' + decodeURI(link));
 }
