@@ -1,6 +1,6 @@
 {
   "name": "engros",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "./dist/engros.umd.cjs",
   "module": "./dist/engros.js",
   "types": "./dist/index.d.ts",
@@ -39,8 +39,14 @@
   ],
   "exports": {
     ".": {
-      "import": "./dist/engros.js",
-      "require": "./dist/engros.umd.cjs"
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/engros.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/engros.umd.cjs"
+      }
     },
     "./style.css": "./dist/style.css"
   }
