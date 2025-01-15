@@ -1,9 +1,9 @@
 {
   "name": "engros",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "./dist/engros.umd.cjs",
   "module": "./dist/engros.js",
-  "types": "./types/index.d.ts",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -22,7 +22,8 @@
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.15",
     "typescript": "^5.6.3",
-    "vite": "^5.4.11"
+    "vite": "^5.4.11",
+    "vite-plugin-dts": "^4.5.0"
   },
   "dependencies": {
     "@fontsource-variable/golos-text": "^5.1.0",
