@@ -1,15 +1,14 @@
 import type { MetadataRoute } from 'next'
 
-// todo
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Next.js PWA',
-    short_name: 'NextPWA',
-    description: 'A Progressive Web App built with Next.js',
+    name: 'Reader',
+    short_name: 'Reader',
+    description: 'Paste a link to an article to convert in to an engaging narrative',
     start_url: '/',
     display: 'standalone',
-    background_color: '#ffffff',
-    theme_color: '#000000',
+    background_color: '#0A0A0A',
+    theme_color: '#0A0A0A',
     icons: [
       {
         src: '/icon-192x192.png',
@@ -22,5 +21,13 @@ export default function manifest(): MetadataRoute.Manifest {
         type: 'image/png',
       },
     ],
+    share_target: {
+      action: 'share',
+      params: {
+        title: 'name',
+        text: 'description',
+        url: 'link',
+      }
+    }
   }
 }
