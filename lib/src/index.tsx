@@ -18,11 +18,33 @@ export default function engros(html: string, referenceLink: string, proxyLink: s
     {serializer: el => el},
   ).parse();
   const readabilityResult = readability!.content;
-  const rawContent = readabilityResult.firstChild?.firstChild!;
-  const rawElements = [...rawContent.childNodes].filter(node => node instanceof HTMLElement);
+
+  let rawElementsUnfiltered: ChildNode[] = [];
+
+  if (readabilityResult.firstChild?.firstChild?.childNodes.length == 1) {
+    let temporary_storage: ChildNode[] = [];
+    const allReadabilityChildNodes = readabilityResult.firstChild!.childNodes;
+
+    for (const node of allReadabilityChildNodes) {
+      if (node.childNodes.length > 1) {
+        rawElementsUnfiltered = temporary_storage.concat([...node.childNodes]);
+        break;
+      } 
+      temporary_storage.push(node);
+    }
+    
+  } else {
+    const node = readabilityResult.firstChild?.firstChild!;
+    rawElementsUnfiltered = [...node.childNodes]
+  }
+
+  const rawElements = rawElementsUnfiltered.filter(node => node instanceof HTMLElement);
+
+  if (rawElements.length == 0) {
+
+  }
   
   const elements = [<h1>{readability!.title}</h1> as HTMLElement, ...rawElements];
-
   // Parsing Wikibooks titles
   if (readability!.title.includes("Wikibooks, open")) {
     var title = readability!.title.split(" - ")[0];
