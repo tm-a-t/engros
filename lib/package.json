@@ -1,5 +1,5 @@
 {
-  "name": "generative-layout",
+  "name": "engros",
   "version": "1.0.0",
   "main": "./dist/engros.umd.cjs",
   "module": "./dist/engros.js",
@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build"
   },
   "type": "module",
   "author": "",

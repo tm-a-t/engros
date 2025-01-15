@@ -61,6 +61,11 @@
     a:hover {
         @apply text-blue-400
     }
+
+    math {
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
 }
 
 @layer components {
