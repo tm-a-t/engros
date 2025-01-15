@@ -36,6 +36,8 @@ export default function engros(html: string, referenceLink: string, proxyLink: s
     postprocessRemainingLinks(elements, proxyLink);
   }
 
+  removeUnnecessaryDivs(elements);
+
   return <div class="container">
     {buildSlides(elements)}
   </div> as HTMLElement;
@@ -46,7 +48,7 @@ function postprocessAnchorLinks(elements: HTMLElement[], referenceLink: string) 
     readabilityOutputElement.querySelectorAll('[href]').forEach(elementWithLink => {
       const href = elementWithLink.getAttribute('href');
       if (href && (
-        href.startsWith(`${referenceLink}#`) || 
+        href.startsWith(`${referenceLink}#`) ||
         href.startsWith(referenceLink.replace('http:', 'https:') + '#') ||
         href.startsWith(referenceLink.replace('https:', 'http:') + '#')
       )) {
@@ -128,4 +130,27 @@ function preprocessHeaders(
   }
 
   return modifiedDocument;
+}
+
+function removeUnnecessaryDivs(elements: HTMLElement[]) {
+  // Remove divs that have text leaves
+
+  const newElements: HTMLElement[] = elements
+    .map(element => {
+      if (element.tagName !== 'DIV') return [element];
+
+      for (let node of element.childNodes) {
+        if (node.nodeType === Node.TEXT_NODE && node.textContent?.trim().length) {
+          return [element];
+        }
+      }
+
+      return [...element.children] as HTMLElement[];
+    })
+    .flat()
+  ;
+
+  console.log(newElements)
+
+  elements.splice(0, elements.length, ...newElements);
 }

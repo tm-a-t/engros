@@ -8,8 +8,6 @@ export function buildSlides(elements: HTMLElement[]): HTMLElement[] {
 
   const groups = groupElements(elements);
 
-  console.log(groups)
-
   const usedLayouts: Layout[] = [];
   const usedBackgrounds: Array<'color' | 'animation'> = [];
   const slides: HTMLElement[] = [];
