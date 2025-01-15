@@ -39,7 +39,7 @@ export function buildSlides(elements: HTMLElement[]): HTMLElement[] {
 }
 
 function groupElements(elements: HTMLElement[]): HTMLElement[][] {
-  const MAX_ELEMENTS = 4;
+  const MAX_ELEMENTS = 10;
   const MAX_LETTERS = 1024;
 
   const groupedElements: HTMLElement[][] = [[]];
