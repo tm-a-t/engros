@@ -11,9 +11,10 @@
       import engros from '@/index.tsx';
       const url_ncatlab = 'https://ncatlab.org/nlab/show/sheaf';
       const url_wikibooks = 'https://en.wikibooks.org/wiki/Haskell/Understanding_monads';
-      const res = await fetch('experiments/testcases/wikibooks.txt');
+      const url_platostanford = 'https://plato.stanford.edu/entries/moral-animal/';
+      const res = await fetch('experiments/testcases/platostanford.txt');
       const html = await res.text();
-      const proxy_url = 'https://generative-layout.tmat.me/';
+      const proxy_url = 'http://localhost:3000/';
 
       document.body.replaceChildren(engros(html, url_wikibooks, proxy_url));
     </script>
