@@ -6,9 +6,9 @@ export default async function Share(
 ) {
   const params = await searchParams;
 
-  return <>
-    {params}
-  </>
+  return <div>
+    {JSON.stringify(params)}
+  </div>
 
   // const link = Array.isArray(params.link) ? params.link[0] : params.link;
   // redirect('/' + decodeURI(link || ''));
