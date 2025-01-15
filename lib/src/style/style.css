@@ -1,75 +1,74 @@
 @import "fonts.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    :root {
-        font-family: 'Golos Text Variable', sans-serif;
-        line-height: 1.225;
-
-        font-synthesis: none;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-
     body {
-        /*font-size: 1.125rem;*/
         overflow-x: hidden;
     }
 
-    pre {
-        font-family: 'PT Mono', monospace;
-        width: 100%;
-        overflow-x: auto;
-    }
+    .engros {
+        pre {
+            font-family: 'PT Mono', monospace;
+            width: 100%;
+            overflow-x: auto;
+        }
 
-    code {
-        font-family: 'PT Mono', monospace;
-        margin: 0 .125rem;
-    }
+        code {
+            font-family: 'PT Mono', monospace;
+            margin: 0 .125rem;
+        }
 
-    ul {
-        padding-left: 2rem;
-    }
+        ul {
+            padding-left: 2rem;
+        }
 
-    h1 {
-        @apply text-4xl font-bold tracking-tight;
-    }
+        h1 {
+            @apply text-4xl font-bold tracking-tight;
+        }
 
-    h2 {
-        @apply text-4xl font-bold tracking-tight;
-    }
+        h2 {
+            @apply text-4xl font-bold tracking-tight;
+        }
 
-    h3 {
-        @apply text-2xl
-    }
+        h3 {
+            @apply text-2xl
+        }
 
-    h4 {
-        @apply text-xl
-    }
+        h4 {
+            @apply text-xl
+        }
 
-    h5, h6 {
-        @apply text-lg
-    }
+        h5, h6 {
+            @apply text-lg
+        }
 
-    a {
-        @apply text-blue-600
-    }
+        a {
+            @apply text-blue-600
+        }
 
-    a:hover {
-        @apply text-blue-400
-    }
+        a:hover {
+            @apply text-blue-400
+        }
 
-    math {
-        overflow-x: auto;
-        overflow-y: hidden;
+        math {
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
     }
 }
 
 @layer components {
-    .container {
+    .engros {
+        font-family: 'Golos Text Variable', sans-serif;
+        line-height: 1.225;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
         height: 100lvh;
         scroll-behavior: smooth;
         overflow: auto;
@@ -82,7 +81,7 @@
         @apply text-zinc-950;
     }
 
-    .slide {
+    .engros-slide {
         position: relative;
         width: 100%;
         min-height: 100lvh;
@@ -99,11 +98,11 @@
         row-gap: 1rem;
     }
 
-    .slide canvas {
+    .engros-slide canvas {
         @apply absolute top-0 bottom-0 left-0 right-0 -z-10;
     }
 
-    .hydra-canvas {
+    .engros-hydra-canvas {
         @apply absolute -z-10 top-0 bottom-0 left-0 right-0 w-full h-full;
     }
 }

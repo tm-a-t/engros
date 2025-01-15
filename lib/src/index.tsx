@@ -63,7 +63,7 @@ export default function engros(html: string, referenceLink: string, proxyLink: s
 
   removeUnnecessaryDivs(elements);
 
-  return <div class="container">
+  return <div class="engros">
     {buildSlides(elements)}
   </div> as HTMLElement;
 }
