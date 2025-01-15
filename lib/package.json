@@ -1,6 +1,6 @@
 {
   "name": "engros",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "./dist/engros.umd.cjs",
   "module": "./dist/engros.js",
   "types": "./types/index.d.ts",
