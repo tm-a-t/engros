@@ -1,0 +1,2040 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 ie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 ie"> <![endif]-->
+<!--[if !IE]> --> <html lang="en"> <!-- <![endif]-->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>
+The Moral Status of Animals (Stanford Encyclopedia of Philosophy)
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive, noodp" />
+<meta property="citation_title" content="The Moral Status of Animals" />
+<meta property="citation_author" content="Gruen, Lori" />
+<meta property="citation_author" content="Mons&oacute;, Susana" />
+<meta property="citation_publication_date" content="2003/07/01" />
+<meta name="DC.title" content="The Moral Status of Animals" />
+<meta name="DC.creator" content="Gruen, Lori" />
+<meta name="DC.creator" content="Mons&oacute;, Susana" />
+<meta name="DCTERMS.issued" content="2003-07-01" />
+<meta name="DCTERMS.modified" content="2024-08-12" />
+
+<!-- NOTE: Import webfonts using this link: -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,200&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" media="screen" href="../../css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../../css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" href="../../css/font-awesome-ie7.min.css"> <![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="../../css/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../css/print.css" />
+<link rel="stylesheet" type="text/css" href="../../css/entry.css" />
+<!--[if IE]> <link rel="stylesheet" type="text/css" href="../../css/ie.css" /> <![endif]-->
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+<!-- NOTE: Javascript for sticky behavior needed on article and ToC pages -->
+<script type="text/javascript" src="../../js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript" src="../../js/entry.js"></script>
+
+<!-- SEP custom script -->
+<script type="text/javascript" src="../../js/sep.js"></script>
+</head>
+
+<!-- NOTE: The nojs class is removed from the page if javascript is enabled. Otherwise, it drives the display when there is no javascript. -->
+<body class="nojs article" id="pagetopright">
+<div id="container">
+<div id="header-wrapper">
+  <div id="header">
+    <div id="branding">
+      <div id="site-logo"><a href="../../index.html"><img src="../../symbols/sep-man-red.png" alt="SEP home page" /></a></div>
+      <div id="site-title"><a href="../../index.html">Stanford Encyclopedia of Philosophy</a></div>
+    </div>
+    <div id="navigation">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <button class="btn btn-navbar collapsed" data-target=".collapse-main-menu" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Menu </button>
+            <div class="nav-collapse collapse-main-menu in collapse">
+              <ul class="nav">
+                <li class="dropdown open"><a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-book"></i> Browse</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                    <li role="menuitem"><a href="../../contents.html">Table of Contents</a></li>
+                    <li role="menuitem"><a href="../../new.html">What's New</a></li>
+                    <li role="menuitem"><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+                    <li role="menuitem"><a href="../../published.html">Chronological</a></li>
+                    <li role="menuitem"><a href="../../archives/">Archives</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-info-sign"></i> About</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                    <li role="menuitem"><a href="../../info.html">Editorial Information</a></li>
+                    <li role="menuitem"><a href="../../about.html">About the SEP</a></li>
+                    <li role="menuitem"><a href="../../board.html">Editorial Board</a></li>
+                    <li role="menuitem"><a href="../../cite.html">How to Cite the SEP</a></li>
+                    <li role="menuitem"><a href="../../special-characters.html">Special Characters</a></li>
+                    <li role="menuitem"><a href="../../tools/">Advanced Tools</a></li>
+                    <li role="menuitem"><a href="../../contact.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-leaf"></i> Support SEP</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                    <li role="menuitem"><a href="../../support/">Support the SEP</a></li>
+                    <li role="menuitem"><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+                    <li role="menuitem"><a href="../../support/donate.html">Make a Donation</a></li>
+                    <li role="menuitem"><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End navigation -->
+    
+    <div id="search">
+      <form id="search-form" method="get" action="../../search/searcher.py">
+        <input type="search" name="query" placeholder="Search SEP" />
+        <div class="search-btn-wrapper"><button class="btn search-btn" type="submit" aria-label="search"><i class="icon-search"></i></button></div>
+      </form>
+    </div>
+    <!-- End search --> 
+    
+  </div>
+  <!-- End header --> 
+</div>
+<!-- End header wrapper -->
+
+<div id="content">
+
+<!-- Begin article sidebar -->
+<div id="article-sidebar" class="sticky">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <button class="btn btn-navbar" data-target=".collapse-sidebar" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Entry Navigation </button>
+        <div id="article-nav" class="nav-collapse collapse-sidebar in collapse">
+          <ul class="nav">
+            <li><a href="#toc">Entry Contents</a></li>
+            <li><a href="#Bib">Bibliography</a></li>
+            <li><a href="#Aca">Academic Tools</a></li>
+            <li><a href="https://leibniz.stanford.edu/friends/preview/moral-animal/">Friends PDF Preview <i class="icon-external-link"></i></a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=moral-animal">Author and Citation Info <i class="icon-external-link"></i></a> </li>
+            <li><a href="#pagetopright" class="back-to-top">Back to Top <i class="icon-angle-up icon2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End article sidebar --> 
+
+<!-- NOTE: Article content must have two wrapper divs: id="article" and id="article-content" -->
+<div id="article">
+<div id="article-content">
+
+<!-- BEGIN ARTICLE HTML -->
+
+
+<div id="aueditable"><!--DO NOT MODIFY THIS LINE AND ABOVE-->
+
+<h1>The Moral Status of Animals</h1><div id="pubinfo"><em>First published Tue Jul 1, 2003; substantive revision Mon Aug 12, 2024</em></div>
+
+<div id="preamble">
+
+<p>
+Is there something distinctive about humanity that justifies the idea
+that humans have moral status while non-humans do not? Providing an
+answer to this question has become increasingly important among
+philosophers as well as those outside of philosophy who are interested
+in our treatment of non-human animals. For some, answering this
+question will enable us to better understand the nature of human
+beings and the proper scope of our moral obligations. Some argue that
+there is an answer that can distinguish humans from the rest of the
+natural world. Many of those who accept this answer are interested in
+justifying certain human practices towards non-humans&mdash;practices
+that cause pain, discomfort, suffering, and death. This latter group
+expects that in answering the question in a particular way, humans
+will be justified in granting moral consideration to other humans that
+is neither required nor justified when considering non-human animals.
+In contrast to this view, an increasing number of philosophers have
+argued that while humans are different in a variety of ways from each
+other and other animals, these differences do not provide a
+philosophical defense for denying non-human animals moral
+consideration. What the basis of moral consideration is and what it
+amounts to has been the source of much disagreement.</p>
+</div> 
+
+<div id="toc"><!--Entry Contents-->
+<ul>
+<li><a href="#MorConAni">1. The Moral Considerability of Animals</a>
+   <ul>
+   <li><a href="#Spe">1.1 Speciesism</a></li>
+   <li><a href="#HumExc">1.2 Human Exceptionalism</a></li>
+   <li><a href="#Per">1.3 Personhood</a>
+      <ul>
+      <li><a href="#RatPer">1.3.1 Rational Persons</a></li>
+      <li><a href="#LegPer">1.3.2 Legal Persons</a></li>
+      </ul></li>
+   <li><a href="#Sen">1.4 Sentience</a></li>
+   <li><a href="#Age">1.5 Agency</a></li>
+   </ul></li>
+<li><a href="#MorSigAniMorCla">2. The Moral Significance of Animals&rsquo; Moral Claims</a>
+   <ul>
+   <li><a href="#WhaIntDoAniHav">2.1 What Interests Do Animals Have?</a></li>
+   <li><a href="#HowCouAniMorCla">2.2 How to Count Animals&rsquo; Moral Claims</a></li>
+   </ul></li>
+<li><a href="#AltPerHumRelOthAni">3. Alternative Perspectives on Human Relations to Other Animals</a></li>
+<li><a href="#Bib">Bibliography</a>
+   <ul>
+   <li><a href="#RefCit">References Cited</a></li>
+   <li><a href="#FurRea">Further Reading</a></li>
+   </ul></li>
+<li><a href="#Aca">Academic Tools</a></li>
+<li><a href="#Oth">Other Internet Resources</a></li>
+<li><a href="#Rel">Related Entries</a></li>
+</ul>
+<!--Entry Contents-->
+
+<hr /></div>
+
+<div id="main-text">
+
+<h2 id="MorConAni">1. The Moral Considerability of Animals</h2>
+
+<p>
+To say that a being deserves moral consideration is to say that there
+is a moral claim that this being can make on those who can recognize
+such claims. A morally considerable being is a being who can be
+wronged. It is often thought that because only humans can recognize
+moral claims, it is only humans who are morally considerable. However,
+when we ask why we think human animals are the only types of beings
+that can be morally wronged, we begin to see that the class of beings
+able to recognize moral claims and the class of beings who can suffer
+moral wrongs are not co-extensive. A variety of types of morally
+relevant factors have been invoked to to justify who is morally
+considerable.</p>
+
+<h3 id="Spe">1.1 Speciesism</h3>
+
+<p>
+The view that only humans should be morally considered is sometimes
+referred to as &ldquo;speciesism&rdquo;. In the 1970s, Richard Ryder
+coined this term while campaigning in Oxford to denote a ubiquitous
+type of human centered prejudice, which he thought was similar to
+racism. He objected to favoring one&rsquo;s own species, while
+exploiting or harming members of other species. Peter Singer
+popularized the term and focused on the way speciesism, without moral
+justification, favors the interests of humans:</p>
+
+<blockquote>
+
+<p>
+the racist violates the principle of equality by giving greater weight
+to the interests of members of his own race, when there is a clash
+between their interests and the interests of those of another race.
+Similarly the speciesist allows the interests of his own species to
+override the greater interests of members of other species. The
+pattern is the same in each case. (Singer 1974: 108)</p>
+</blockquote>
+
+<p>
+Discrimination based on race, like discrimination based on species is
+thought to be prejudicial, because these are not factors that matter
+when it comes to making moral claims.</p>
+
+<p>
+Speciesist actions and attitudes are prejudicial because there is no
+prima facie reason for preferring the interests of beings belonging to
+the species group to which one also belongs over the interests of
+those who don&rsquo;t. That humans are considered to be members of the
+species Homo sapiens &mdash; humans share a genetic make-up and a
+distinctive physiology, we all emerge from a human pregnancy &mdash;
+is unimportant from the moral point of view. Species membership is
+morally irrelevant, a bit of luck that is no more morally interesting
+than being born in Malaysia or Canada. It thus cannot serve as the
+basis for a view that holds that our species deserves moral
+consideration that is not owed to members of other species.</p>
+
+<p>
+As Oscar Horta (2022) and others have noted, speciesism is not only an
+individual attitude that some humans hold, but is a &ldquo;collective
+phenomenon&rdquo; that springs from ideological commitments that are
+generated within and shape institutions and social structures. Since
+membership in a species category is largely socially determined,
+analyzing the meanings of category membership can help illuminate
+further problems with speciesism. The social meanings of categories
+structure not only the institutions we operate within but also how we
+conceptualize ourselves and our world. Humans have developed moral
+systems as well as a wide range of other valuable practices, and by
+creating these systems, we separate the human from the rest of the
+animal kingdom. But the category &ldquo;human&rdquo; itself is morally
+contested. Some argue, for example, that racism is not simply, or even
+primarily about discrimination and prejudice, but rather a mechanism
+of dehumanizing blackness so as to provide the conditions that make
+humans white (see Fanon 1967; Jackson 2020; Kim 2015; Ko &amp; Ko
+2017). According to this line of thought, speciesism isn&rsquo;t
+focused on discrimination or prejudice but is a central tool for
+creating human (and white) supremacy or exceptionalism.</p>
+
+<h3 id="HumExc">1.2 Human Exceptionalism</h3>
+
+<p>
+Like speciesism, human exceptionalism can be understood in different
+ways. The most common way of understanding it is to suggest that there
+are distinctly human capacities and it is on the basis of these
+capacities that humans have moral status and other animals do not. But
+which capacities mark out all and only humans as the kinds of beings
+that can be wronged? A number of candidate capacities have been
+proposed&mdash;developing family ties, solving social problems,
+expressing emotions, starting wars, having sex for pleasure, using
+language, or thinking abstractly, are just a few. As it turns out,
+none of these activities is uncontroversially unique to humans. Both
+scholarly and popular work on animal behavior suggests that many of
+the activities that are thought to be distinct to humans occur in
+non-humans. For example, many species of non-humans develop long
+lasting kinship ties&mdash;orangutan mothers stay with their young for
+eight to ten years and while they eventually part company, they
+continue to maintain their relationships. Less solitary animals, such
+as chimpanzees, baboons, wolves, and elephants maintain extended
+family units built upon complex individual relationships, for long
+periods of time. Meerkats in the Kalahari desert are known to
+sacrifice their own safety by staying with sick or injured family
+members. All animals living in socially complex groups must solve
+various problems that inevitably arise in such groups. Canids and
+primates are particularly adept at it, yet even chickens and horses
+are known to recognize large numbers of individuals in their social
+hierarchies and to maneuver within them. One of the ways that
+non-human animals negotiate their social environments is by being
+particularly attentive to the emotional states of others around them.
+When a conspecific is angry, it is a good idea to get out of his way.
+Animals that develop life-long bonds are known to suffer from the
+death of their partners. Some are even said to die of sorrow. As
+Darwin noted in The Descent of Man: &ldquo;So intense is the grief of
+female monkeys for the loss of their young, that it invariably caused
+the death of certain kinds&rdquo; (1871: 40). Jane Goodall&rsquo;s
+report of the death of the healthy 8 year old chimpanzee Flint just
+three weeks after the death of his mother Flo also suggests that
+sorrow can have a devastating effect on non-human animals (see Goodall
+2000: 140&ndash;141 in Bekoff 2000). Coyotes, elephants and killer
+whales are also among the species for which profound effects of grief
+have been reported (Bekoff 2000) and many dog owners can provide
+similar accounts. While the lives of many, perhaps most, non-humans in
+the wild are consumed with struggle for survival, aggression and
+battle, there are some non-humans whose lives are characterized by
+expressions of joy, playfulness, and a great deal of sex (Woods 2010).
+Studies in cognitive ethology have suggested that some non-humans
+engage in manipulative and deceptive activity, can construct
+&ldquo;cognitive maps&rdquo; for navigation, and some non-humans
+appear to understand symbolic representation and are able to use
+ language.<sup>[<a href="notes.html#note-1" id="ref-1">1</a>]</sup></p>
+ 
+<p>
+It appears that most of the capacities that are thought to distinguish
+humans as morally considerable beings, have been observed, often in
+less elaborate form, in the non-human world. Because human behavior
+and cognition share deep roots with the behavior and cognition of
+other animals, approaches that try to find sharp behavioral or
+cognitive boundaries between humans and other animals remain
+controversial. For this reason, attempts to establish human uniqueness
+by identifying certain capacities are not the most promising when it
+comes to thinking hard about the moral status of animals.</p>
+
+<h3 id="Per">1.3 Personhood</h3>
+
+<p>
+Nonetheless, there is something important that is thought to
+distinguish humans from non-humans that is not reducible to the
+observation of behavior best explained by possessing a certain
+capacity, and that is our &ldquo;personhood&rdquo;. The notion of
+personhood identifies a category of morally considerable beings that
+is thought to be coextensive with humanity. Historically, Kant is the
+most noted defender of personhood as the quality that makes a being
+valuable and thus morally considerable (for a contemporary utilitarian
+discussion of personhood, see Varner 2012). Kant writes:</p>
+
+<blockquote>
+
+<p>
+&hellip;every rational being, exists as an end in himself and not
+merely as a means to be arbitrarily used by this or that
+will&hellip;Beings whose existence depends not on our will but on
+nature have, nevertheless, if they are not rational beings, only a
+relative value as means and are therefore called things. On the other
+hand, rational beings are called persons inasmuch as their nature
+already marks them out as ends in themselves. (Kant [1785] 1998: [Ak
+4: 428])</p>
+</blockquote>
+
+<p>
+And:</p>
+
+<blockquote>
+
+<p>
+The fact that the human being can have the representation
+&ldquo;I&rdquo; raises him infinitely above all the other beings on
+earth. By this he is a person&hellip;.that is, a being altogether
+different in rank and dignity from things, such as irrational animals,
+with which one may deal and dispose at one&rsquo;s discretion. (Kant
+[1798] 2010: 239 [Ak 7: 127])</p>
+</blockquote>
+
+<p>
+More recent work in a Kantian vein develops this idea. Christine
+Korsgaard, for example, argues that humans &ldquo;uniquely&rdquo; face
+a problem, the problem of normativity. This problem emerges because of
+the reflective structure of human consciousness. We can, and often do,
+think about our desires and ask ourselves &ldquo;Are these desires
+reasons for action? Do these impulses represent the kind of things I
+want to act according to?&rdquo; Our reflective capacities allow us
+and require us to step back from our mere impulses in order to
+determine when and whether to act on them. In stepping back we gain a
+certain distance from which we can answer these questions and solve
+the problem of normativity. We decide whether to treat our desires as
+reasons for action based on our conceptions of ourselves, on our
+&ldquo;practical identities&rdquo;. When we determine whether we
+should take a particular desire as a reason to act we are engaging in
+a further level of reflection, a level that requires an endorsable
+description of ourselves. This endorsable description of ourselves,
+this practical identity, is a necessary moral identity because without
+it we cannot view our lives as worth living or our actions as worth
+doing. Korsgaard suggests that humans face the problem of normativity
+in a way that non-humans apparently do not:</p>
+
+<blockquote>
+
+<p>
+A lower animal&rsquo;s attention is fixed on the world. Its
+perceptions are its beliefs and its desires are its will. It is
+engaged in conscious activities, but it is not conscious <em>of</em>
+them. That is, they are not the objects of its attention. But we human
+animals turn our attention on to our perceptions and desires
+themselves, on to our own mental activities, and we are conscious
+<em>of</em> them. That is why we can think <em>about</em>
+them&hellip;And this sets us a problem that no other animal has. It is
+the problem of the normative&hellip;. The reflective mind cannot
+settle for perception and desire, not just as such. It needs a reason.
+(Korsgaard 1996: 93)</p>
+</blockquote>
+
+<p>
+Here, Korsgaard understands &ldquo;reason&rdquo; as &ldquo;a kind of
+reflective success&rdquo; and given that non-humans are thought to be
+unable to reflect in a way that would allow them this sort of success,
+it appears that they do not act on reasons, at least reasons of this
+kind. Since non-humans do not act on reasons they do not have a
+practical identity from which they reflect and for which they act. So
+humans can be distinguished from non-humans because humans, we might
+say, are sources of normativity and non-humans are not.</p>
+
+<h4 id="RatPer">1.3.1 Rational Persons</h4>
+
+<p>
+But arguably, Kant&rsquo;s view of personhood does not distinguish all
+and only humans as morally considerable. Personhood is not, in fact,
+coextensive with humanity when understood as a general description of
+the group to which human beings belong. And the serious part of this
+problem is not that there may be some extra-terrestrials or deities
+who have rational capacities. The serious problem is that many humans
+are not persons. Some humans&mdash;i.e., infants, children, people in
+comas&mdash;do not have the rational, self-reflective capacities
+associated with personhood. This problem, unfortunately known in the
+literature as the problem of &ldquo;marginal cases&rdquo;, poses
+serious difficulties for &ldquo;personhood&rdquo; as the criterion of
+moral considerability. Many beings whose positive moral value we have
+deeply held intuitions about, and who we treat as morally
+considerable, will be excluded from consideration by this account.</p>
+
+<p>
+There are three ways to respond to this counter-intuitive conclusion.
+One, which can be derived from one interpretation of Kant, is to
+suggest that non-persons are morally considerable indirectly. Though
+Kant believed that animals were mere things it appears he did not
+genuinely believe we could dispose of them any way we wanted. In the
+Lectures on Ethics he makes it clear that we have indirect duties to
+animals, duties that are not toward them, but in regard to them
+insofar as our treatment of them can affect our duties to persons.</p>
+
+<blockquote>
+
+<p>
+If a man shoots his dog because the animal is no longer capable of
+service, he does not fail in his duty to the dog, for the dog cannot
+judge, but his act is inhuman and damages in himself that humanity
+which it is his duty to show towards mankind. If he is not to stifle
+his human feelings, he must practice kindness towards animals, for he
+who is cruel to animals becomes hard also in his dealings with men.
+([1784&ndash;5] 1997: 212 [Ak 27: 459])</p>
+</blockquote>
+
+<p>
+And one could argue the same would be true of those human beings who
+are not persons. We disrespect our humanity when we act in inhumane
+ways towards non-persons, whatever their species.</p>
+
+<p>
+This indirect view is unsatisfying&mdash;it fails to capture the
+independent wrong that is being done to the non-person. When someone
+rapes a woman in a coma, or whips a severely brain damaged child, or
+sets a cat on fire, they are not simply disrespecting humanity or
+themselves as representatives of it, they are wronging these
+non-persons. So, a second way to avoid the counter-intuitive
+conclusion is to argue that such non-persons stand in the proper
+relations to &ldquo;rational nature&rdquo; such that they should be
+thought of as morally considerable. Allen Wood (1998) argues in this
+way and suggests that all beings that potentially have a rational
+nature, or who virtually have it, or who have had it, or who have part
+of it, or who have the necessary conditions of it, what he calls
+&ldquo;the infrastructure of rational nature&rdquo;, should be
+directly morally considerable. Insofar as a being stands in this
+relation to rational nature, they are the kinds of beings that can be
+wronged.</p>
+
+<p>
+This response is not unlike that of noted animal rights proponent, Tom
+Regan, who argues that what is important for moral consideration are
+not the differences between humans and non-humans but the
+similarities. Regan argues that because persons share with certain
+non-persons (which includes those humans and non-humans who have a
+certain level of organized cognitive function) the ability to be
+experiencing subjects of a life and to have an individual welfare that
+matters to them regardless of what others might think, both deserve
+moral consideration. Regan argues that subjects of a life:</p>
+
+<blockquote>
+
+<p>
+want and prefer things, believe and feel things, recall and expect
+things. And all these dimensions of our life, including our pleasure
+and pain, our enjoyment and suffering, our satisfaction and
+frustration, our continued existence or our untimely death&mdash;all
+make a difference to the quality of our life as lived, as experienced,
+by us as individuals. As the same is true of &hellip; animals &hellip;
+they too must be viewed as the experiencing subjects of a life, with
+inherent value of their own. (Regan 1985: 24)</p>
+</blockquote>
+
+<p>
+A third way of addressing this problem has been taken up by Korsgaard,
+who maintains that there is a big difference between those with
+normative, rational capacities and those without, but unlike Kant,
+believes both humans and non-humans are the proper objects of our
+moral concern. She argues that those without normative, rational
+capacities share certain &ldquo;natural&rdquo; capacities with
+persons, and these natural capacities are often the content of the
+moral demands that persons make on each other. She writes:</p>
+
+<blockquote>
+
+<p>
+what we demand, when we demand &hellip; recognition, is that our
+natural concerns&mdash;the objects of our natural desires and
+interests and affections&mdash;be accorded the status of values,
+values that must be respected as far as possible by others. And many
+of those natural concerns&mdash;the desire to avoid pain is an obvious
+example&mdash;spring from our animal nature, not from our rational
+nature. (Korsgaard 2007: 7)</p>
+</blockquote>
+
+<p>
+What moral agents construct as valuable and normatively binding is not
+only our rational or autonomous capacities, but the needs and desires
+we have as living, embodied beings. Insofar as these needs and desires
+are valuable for agents, the ability to experience similar needs and
+desires in patients should also be valued.</p>
+
+<h4 id="LegPer">1.3.2 Legal Persons</h4>
+
+<p>
+In the courts, all humans and some corporations are considered persons
+in the legal sense. But all animals, infants and adults, are not legal
+persons, but rather, under the law they are considered property. There
+have been a few attempts to change the legal status of some nonhuman
+animals from property to persons. The Nonhuman Rights Project (NhRP)
+founded by the late Steven Wise, has filed a series of cases in the
+New York courts seeking to establish legal personhood for particular
+chimpanzees being held in the state, with the goal of protecting their
+rights to bodily integrity and liberty, and allow them to seek remedy,
+through their proxies, when those rights are violated. Chimpanzees are
+a good test case for establishing nonhuman legal personhood as they
+are, according to the documents filed by NhRP, autonomous beings with
+sophisticated cognitive abilities including:</p>
+
+<blockquote>
+
+<p>
+episodic memory, self-consciousness, self-knowing, self agency,
+referential and intentional communication, mental time-travel,
+numerosity, sequential learning, meditational learning, mental state
+modeling, visual perspective taking, understanding the experiences of
+others, intentional action, planning, imagination, empathy,
+metacognition, working memory, decision-making, imitation, deferred
+imitation, emulation, innovation, material, social, and symbolic
+culture, cross-modal perception, tool-use, tool-making,
+cause-and-effect. (petition of NhRP v. Samuel Stanley, p. 12, see
+ <a href="#Oth">Other Internet Resources</a>)</p>
+ </blockquote>
+
+<p>
+The legal arguments to extend personhood beyond the human parallel
+more general ethical arguments that extend ethical consideration
+outward from those who occupy the moral center. Turning to empirical
+work designed to show that other animals are really similar to those
+considered legal persons, primatologists submitted affidavits
+attesting to what they have learned working with chimpanzees. Mary Lee
+Jensvold suggests:</p>
+
+<blockquote>
+
+<p>
+there are numerous parallels in the way chimpanzee and human
+communication skills develop over time, suggesting a similar unfolding
+cognitive process across the two species and an underlying
+neurobiological continuity. (Jensvold affidavit, p. 4, in
+ <a href="#Oth">Other Internet Resources</a>)</p>
+ </blockquote>
+
+<p>
+James King notes:</p>
+
+<blockquote>
+
+<p>
+chimpanzees and humans resemble each other in terms of their ability
+to experience happiness and the way in which it relates to individual
+personality. (King affidavit, p. 8, in
+ <a href="#Oth">Other Internet Resources</a>)</p>
+ </blockquote>
+
+<p>
+And Mathias Osvath makes remarkable claims about chimpanzee
+personhood:</p>
+
+<blockquote>
+
+<p>
+Autonoetic consciousness gives an individual of any species an
+autobiographical sense of it self with a future and a past. Chimps and
+other great apes clearly possess an autobiographical self, as they are
+able to prepare themselves for future actions&hellip; they likely can,
+just as humans, be in pain over an anticipated future event that has
+yet to occur. For instance, confining someone in a prison or cage for
+a set time, or for life, would lose much of its power as punishment if
+that individual had no self-concept. Every moment would be a new
+moment with no conscious relation to the next. But, chimpanzees. and
+other great apes have a concept of their personal past and future and
+therefore suffer the pain of not being able to fulfill one&rsquo;s
+goals or move around as one wants; like humans they experience the
+pain of anticipating a never-ending situation. (Osvath affidavit, pp.
+4&ndash;7, in
+ <a href="#Oth">Other Internet Resources</a>)</p>
+ </blockquote>
+
+<p>
+These claims, as well as those of others experts, identify the
+relevantly similar capacities that chimpanzees and other great apes
+share with humans and it is in virtue of these capacities that legal
+personhood is sought.</p>
+
+<h3 id="Sen">1.4 Sentience</h3>
+
+<p>
+Using rational nature or cognitive capacities as the touchstone of
+moral considerability misses an important fact about animals, human
+and nonhuman. Our lives can go better or worse for us. Utilitarians
+have traditionally argued that the truly morally important feature of
+beings is unappreciated when we focus on personhood or the rational,
+self-reflective nature of humans, or the relation a being stands in to
+such nature, or being the subject of a life, or being legal persons.
+What is really important, utilitarians maintain, is the promotion of
+happiness, or pleasure, or the satisfaction of interests, and the
+avoidance of pain, or suffering, or frustration of interests. Bentham,
+one of the more forceful defenders of this sentientist view of moral
+considerability, famously wrote:</p>
+
+<blockquote>
+
+<p>
+Other animals, which, on account of their interests having been
+neglected by the insensibility of the ancient jurists, stand degraded
+into the class of <em>things</em>. [original emphasis] &hellip; The
+day has been, I grieve it to say in many places it is not yet past, in
+which the greater part of the species, under the denomination of
+slaves, have been treated &hellip; upon the same footing as &hellip;
+animals are still. The day may come, when the rest of the animal
+creation may acquire those rights which never could have been
+withholden from them but by the hand of tyranny. The French have
+already discovered that the blackness of skin is no reason why a human
+being should be abandoned without redress to the caprice of a
+tormentor. It may come one day to be recognized, that the number of
+legs, the villosity of the skin, or the termination of the
+<em>ossacrum</em>, are reasons equally insufficient for abandoning a
+sensitive being to the same fate. What else is it that should trace
+the insuperable line? Is it the faculty of reason, or perhaps, the
+faculty for discourse?&hellip;the question is not, Can they
+<em>reason</em>? nor, Can they <em>talk</em>? but, Can they
+<em>suffer</em>? (Bentham 1780/1789: chapter xvii, paragraph 6)</p>
+</blockquote>
+
+<p>
+Contemporary utilitarians, such as Peter Singer (1990, [1979] 1993),
+suggest that there is no morally justifiable way to exclude from moral
+consideration non-humans or non-persons who can clearly suffer. Any
+being that has an interest in not suffering deserves to have that
+interest taken into account. And a non-human who acts to avoid pain
+can be thought to have just such an interest. Even contemporary
+Kantians have acknowledged the moral force of the experience of pain.
+Korsgaard, for example, writes &ldquo;it is a pain to be in pain. And
+that is not a trivial fact&rdquo; (1996: 154).</p>
+
+<blockquote>
+
+<p>
+When you pity a suffering animal, it is because you are perceiving a
+reason. An animal&rsquo;s cries express pain, and they mean that there
+is a reason, a reason to change its conditions. And you can no more
+hear the cries of an animal as mere noise than you can the words of a
+person. Another animal can obligate you in exactly the same way
+another person can. &hellip;So of course we have obligations to
+animals. (Korsgaard 1996: 153)</p>
+</blockquote>
+
+<p>
+When we encounter an animal in pain we recognize their claim on us,
+and thus beings who can suffer are morally considerable.</p>
+
+<p>
+Though much work on sentience has been centered on mammals and birds,
+in recent years there has been a surge of literature defending a need
+to expand the circle of moral consideration to include other taxa,
+following evidence that sentience extends beyond those initial groups
+of animals. There are now sentience-based defenses of the moral status
+of fishes (Bovenkerk &amp; Meijboom 2011; Balcombe 2017), octopuses
+(Mather 2020; King &amp; Marino 2019; Jacquet et al. 2019), arthropods
+(Mikhalevich &amp; Powell 2020), and decapod crustaceans (Crump et al.
+2022). Nevertheless, sentience remains a non-observable capacity, and
+consequently despite the scientific advances there is a lot of
+uncertainty regarding the sentience of animals that are very
+phylogenetically distant from us, such as insects. As a result,
+several authors have defended the need to incorporate precautionary
+principles to guide our interactions with these animals, considering
+that we should err on the side of caution when dealing with beings
+whose sentience is uncertain (e.g. Fischer 2016; Birch 2017; Knutsson
+&amp; Munthe 2017).</p>
+
+<h3 id="Age">1.5 Agency</h3>
+
+<p>
+Some authors have sought to ground moral status in a being&rsquo;s
+agency. Sebo (2017), for instance, distinguishes between propositional
+agency and perceptual agency. Propositional agency is the capacity to
+act on the basis of normative propositional judgments, and exemplifies
+the kind of agency that philosophers tend to think of when they argue
+that only humans can act, while animals can only behave. Perceptual
+agency, in contrast, is the capacity to act on the basis of what Sebo
+calls &lsquo;normative perceptual experiences&rsquo;, which happen
+when we experience entities in the world as calling for a certain
+treatment. Sebo considers that perceptual agency is widespread among
+animals, and indeed is often exercised by humans. He argues that
+insofar as we exercise the same kind of agency, we have the same kind
+of moral status, and that all beings who have perceptual agency have a
+right to life, liberty, and property. Jamieson (2018) also argues
+against the pervasive view that human agency is radically distinct
+from animal agency, and considers that acknowledging animal agency not
+only brings greater humility in our dealings with other species, but
+in addition allows us to appreciate that &ldquo;[f]or many of them, as
+for us, the meaning and value of life turns on what affects agency as
+well as on what affects welfare&rdquo; (p. 122). Wilcox (2020a) argues
+that agency is both a necessary and a sufficient condition for moral
+status. His reason for holding this view is that he considers agency
+and sentience to be co-extensive, so that all agents are sentient and
+vice versa. However, he believes it important to ground moral status
+in agency, rather than sentience, to emphasize that moral status
+entails not just a right to be protected from unnecessary suffering,
+but also a right to self-determination. Similarly, Lessard (2024)
+argues that grounding moral status in agency can offer a better
+alternative than sentience for the legal protection of animals,
+insofar as focusing solely on the reduction of suffering can still
+allow for the exploitation and killing of animals, which
+wouldn&rsquo;t be warranted if we grant animal agents a right to make
+their own decisions about how their life should go.</p>
+
+<h2 id="MorSigAniMorCla">2. The Moral Significance of Animals&rsquo; Moral Claims</h2>
+
+<p>
+Knowing that an animal has moral status only tells us that she is owed
+some moral consideration, but does not indicate how exactly she ought
+to be treated. In order to work out this issue, at least two further
+questions need to be addressed. A first question concerns the
+interests that an animal has, that is, what makes her life go well or
+badly for her. The second question concerns how to assess
+animals&rsquo; moral claims and how to weigh them against conflicting
+claims. We will now briefly consider each of these questions.</p>
+
+<h3 id="WhaIntDoAniHav">2.1 What Interests Do Animals Have?</h3>
+
+<p>
+In order to know how we ought to treat an animal, we need to know what
+would make her life go better or worse. In other words, we need to
+know what her interests are. The word &lsquo;interests&rsquo; is not
+meant to refer exclusively to the animal&rsquo;s subjective
+(&lsquo;felt&rsquo;) preferences, but rather to everything in which
+she has a stake, which may include objective as well as subjective
+goods. Different value theories give different accounts of what these
+goods are. Within animal ethics, there are three main approaches: (1)
+hedonism, (2) preference-satisfaction theories, and (3) objective list
+theories. (See also the SEP entry on
+ <a href="../well-being/">well-being</a>).</p>
+ 
+<p>
+Hedonistic theories consider that there is only one thing that is good
+&ndash; pleasure (broadly understood to encompass all positive
+affective states), and only one thing that is bad &ndash; pain
+(broadly understood to encompass all negative affective states). It
+simply seems intuitive that pleasure is good and that pain is bad for
+all beings who can experience pleasure and pain. Its simplistic
+character has made hedonism a popular value theory in much
+contemporary animal ethics. </p>
+
+<p>
+This situation contrasts with contemporary human ethics, where
+hedonism is now thought to be a rather marginal axiology that has
+quite counterintuitive implications. One of the most widely cited
+thought experiments to illustrate the counterintuitive nature of
+hedonism is Robert Nozick&rsquo;s ([1974] 2013) experience machine, an
+imaginary device that would give whomever plugged into it all the
+pleasurable experiences they like. That most of us would refuse to
+give up our lives to plug into such a machine is meant to illustrate
+that there&rsquo;s more to a good life than pleasure and the absence
+of pain. </p>
+
+<p>
+Animal ethicists who adhere to hedonism often embrace its
+counterintuitive implications. For instance, hedonism entails that the
+main problem involved in farming animals for food is the fact that
+animal agriculture generates vast amounts of suffering. This has led
+some proponents of this theory to argue that an acceptable solution
+for farmed animals&rsquo; plight would be to genetically engineer, or
+disenhance, them to make them incapable of experiencing any pain
+(McMahan 2008; Shriver 2009; Shriver &amp; McConnachie 2018). Others
+have defended the need for large-scale interventions in nature to
+reduce wild animal suffering or even &lsquo;engineer paradise&rsquo;
+wherever possible (Horta 2010; Kianpour &amp; Paez 2022; Faria 2023).
+Yet others have embraced the view that it&rsquo;s legitimate to
+deprive animals of their freedom so long as they do not suffer
+(Cochrane 2012) or that hedonism, coupled with utilitarianism, might
+entail a need to give moral priority to the creation of large amounts
+of small sentient animals, such as insects (Sebo 2023).</p>
+
+<p>
+Although the simplicity of hedonism has an undeniable appeal, many
+reject its counterintuitive implications and find it to impoverish the
+notion of well-being by reducing it to pleasurable affective states.
+An alternative is provided by preference-satisfaction theories, which
+don&rsquo;t determine a priori the contents of a good life, but rather
+assume that well-being consists of the satisfaction of whichever
+preferences one happens to have. Within animal ethics, Peter
+Singer&rsquo;s Animal Liberation provided a strong defense of
+preference-satisfaction accounts of well-being, although Singer
+himself now endorses hedonism (Lazari-Radec &amp; Singer 2016).</p>
+
+<p>
+Preference-satisfaction accounts of well-being are subjective and
+pluralistic. These accounts have the problem that, while we all want
+our preferences satisfied, the satisfaction of our preferences
+isn&rsquo;t always good for us. Take the obvious example of smoking.
+An addicted smoker has a preference to smoke, but given the
+health-risks associated with this activity it&rsquo;s hard to see how
+smoking would contribute to her well-being. Further, not all
+preferences are formed under ideal conditions. One might be deceived,
+tricked, indoctrinated, or otherwise manipulated into having a
+preference that isn&rsquo;t actually good for them. This seems
+particularly relevant in the case of domesticated animals, who have
+been bred for docility for millenia and might not always have the
+preferences that would most contribute to their well-being. A dog with
+an abusive owner, for instance, might have the will to please him
+rather than the preference of fighting back or running away, even
+though the latter would be better for her. We can also imagine
+instances of animals being trained or conditioned to have preferences
+whose fulfillment is bad for them, as might be the case of roosters
+who are trained to fight.</p>
+
+<p>
+This generates the need for some theoretical qualification to ensure
+that the preferences in question are adequate. One option is to claim
+that only those preferences whose satisfaction leads to a net balance
+of pleasure over pain actually contribute to one&rsquo;s well-being,
+but then the theory collapses into hedonism, since what ultimately
+matters is the pleasure generated, and the satisfaction of our
+preferences becomes a mere instrumental good (Appleby &amp;
+Sand&oslash;e 2023). Another option is to claim that the preferences
+that contribute to well-being are those formed under adequate
+epistemic circumstances, which has often been interpreted as requiring
+that the individual be fully informed and that her preferences be her
+own autonomous choice. However, different authors have doubted that
+animals can form preferences in this sort of autonomous way (Korsgaard
+2006, Bruckner 2021), which would imply that we may often have to
+decide on behalf of animals what a good life would look like for them.
+Those rejecting this kind of paternalism will be faced with the
+challenge of determining animals&rsquo; preferences, which is
+notoriously difficult even for species whose psychology has been
+extensively studied (Kirkden &amp; Pajor 2006).</p>
+
+<p>
+Some animal ethicists have opted for objective list accounts of
+well-being. According to this kind of value theory, there is a list of
+objective goods or opportunities that are central to living a good
+life. This list will typically include pleasure, but other goods as
+well, such as knowledge, autonomy, achievements, or friendship.
+Objective list theories identify goods that contribute value to an
+individual&rsquo;s life regardless of whether she personally values
+and desires them or whether each of them brings a net balance of
+pleasure over pain.</p>
+
+<p>
+Martha Nussbaum (2006) offers a list of central capabilities whose
+exercise is essential for an animal to flourish as the sort of being
+she is, and which includes life; bodily health; bodily integrity;
+senses, imagination, and thought; emotions; practical reason;
+affiliation; play; and control over one&rsquo;s environment. As a
+result of growing evidence regarding many animals&rsquo;
+psychological, behavioral, and social complexity, other goods have
+been added to the list, such as freedom (Schmidt 2015; Giroux 2016;
+Wilcox 2020b), dignity (Cataldi 2002; Gruen 2014), meaning (Purves
+&amp; Delon 2018; Thomas 2018; Hauskeller 2020; Abbate 2023), culture
+(Fitzpatrick &amp; Andrews 2022), and care (Mons&oacute; et al. 2018;
+Benz-Schwarzburg &amp; Wrage 2023).</p>
+
+<p>
+Although objective list theories have some advantages over hedonism
+and preference-satisfaction theories, they also have a clear drawback:
+it&rsquo;s very difficult to ground the objective value of these
+goods. While in the case of pleasure we can appeal to its positive
+phenomenology and in the case of preference satisfaction we can appeal
+to the fact that whatever is desired is what the individual wants in
+her life, in the case of these goods no such shortcut exists. Some,
+like Nussbaum, appeal to the norm of the species to ground the list of
+goods, but there is a danger of committing a naturalistic fallacy
+here, since what is natural for a species is often contentious and
+need not necessarily be good for any individual. For instance, it may
+be considered natural for stags to fight but fighting probably
+doesn&rsquo;t contribute to the good life for a stag, given injury,
+infection, and death that can result. Although there are theoretical
+tools one can use to circumvent these worries, proponents of objective
+list theories need to be wary of projecting an anthropocentric ideal
+of a good life onto animals.</p>
+
+<h3 id="HowCouAniMorCla">2.2 How to Count Animals&rsquo; Moral Claims</h3>
+
+<p>
+That non-human animals can make moral claims on us does not in itself
+indicate how such claims are to be assessed and conflicting claims
+adjudicated. Being morally considerable is like showing up on a moral
+radar screen&mdash;how strong the signal is or where it is located on
+the screen are separate questions. Of course, how one argues for the
+moral considerability of non-human animals will inform how we are to
+understand the force of an animal&rsquo;s claims.</p>
+
+<p>
+According to the view that an animal&rsquo;s moral claim is equivalent
+to a moral right, any action that fails to treat the animal as a being
+with inherent worth would violate that animal&rsquo;s right and is
+thus morally objectionable. According to the animal rights position,
+to treat an animal as a means to some human end, as many humans do
+when they eat animals or experiment on them, is to violate that
+animal&rsquo;s right. As Tom Regan has written:</p>
+
+<blockquote>
+
+<p>
+&hellip;animals are treated routinely, systematically as if their
+value were reducible to their usefulness to others, they are
+routinely, systematically treated with a lack of respect, and thus are
+their rights routinely, systematically violated. (Regan 1985: 24).</p>
+</blockquote>
+
+<p>
+Any practice that fails to respect the rights of those animals who
+have them, e.g., eating animals, hunting animals, experimenting on
+animals, using animals for entertainment, is wrong, irrespective of
+human need, context, or culture. This doesn&rsquo;t mean that it may
+not sometimes be justified to violate an animal&rsquo;s rights, if the
+circumstances are dire enough and rights are in conflict. What is
+distinct about the rights position is that the violation of a right is
+still wrong, even if it can be justified in particular circumstances.
+And this means that the story doesn&rsquo;t end there, but rather that
+certain forward-looking duties are generated in the moment a right is
+violated, duties that may call for the need to compensate the victims
+or to work towards ensuring that the circumstances that led to rights
+violations never arise again.</p>
+
+<p>
+The animal rights theory that most characteristically incorporates the
+obligations that arise as a result of various relations is Donaldson
+and Kymlicka&rsquo;s <em>Zoopolis</em> (2011). Donaldson and Kymlicka
+argue that rights apply differently to different animals who have
+moral status. While all sentient animals hold the same basic negative
+rights, meaning they are protected against killing, torture, slavery,
+and confinement, other rights arise as a result of the different
+relations that humans have had with specific animals. Domesticated
+animals, whom we have historically forced into a relationship of
+dependence with us, are owed the status of citizens. This means that
+they are full-blown members of our communities, which entails that we
+have specific duties towards them, such as a duty to socialize them
+properly, to give them free access to public spaces, to protect them
+from harm, to provide them medical care, or to ensure that their
+preferences are taken into account when making political decisions. In
+contrast, wild animals are owed a right to sovereignty over the
+territories they occupy, which means that they must be protected
+against colonization, invasion, and exploitation, as well as against
+any paternalistic management on our behalf. Donaldson and Kymlicka
+also discuss liminal animals, like squirrels and deer and racoons, who
+live in human spaces but aren&rsquo;t domesticated. These animals,
+Donaldson and Kymlicka argue, are owed the status of denizens, which
+means that they have a right to secure residency once they have
+settled in our communities and their interests must be taken into
+account when designing our cities, but they have fewer rights and
+obligations than domesticated animals (not being entitled, for
+instance, to a protection from predation, nor being obligated to
+become socialized).</p>
+
+<p>
+The utilitarian position on animals, most commonly associated with
+Peter Singer and popularly, though erroneously, referred to as an
+animal rights position, is actually quite distinct. Here the moral
+significance of the claims of animals depends on what other morally
+significant competing claims might be in play in any given situation.
+While the equal interests of all morally considerable beings are
+considered equally, the practices in question may end up violating or
+frustrating some interests but would not be considered morally wrong
+if, when all equal interests are considered, more of these interests
+are satisfied than frustrated. For utilitarians like Singer, what
+matters are the strength and nature of interests, not whose interests
+these are. So, if the only options available in order to save the life
+of one morally considerable being is to cause harm, but not death, to
+another morally considerable being, then according to a utilitarian
+position, causing this harm may be morally justifiable. Similarly, if
+there are two courses of action, one which causes extreme amounts of
+suffering and ultimate death, and one which causes much less suffering
+and painless death, then the latter would be morally preferable to the
+former.</p>
+
+<p>
+Consider factory farming, the most common method used to convert
+animal bodies into relatively inexpensive food in industrialized
+societies today. An estimated 8 billion animals in the United States
+are born, confined, biologically manipulated, transported and
+ultimately slaughtered each year so that humans can consume them. The
+conditions in which these animals are raised and the method of
+slaughter causes vast amounts of suffering (see, for example, Safran
+Foer 2010, Singer 2023). Given that animals suffer under such
+conditions and assuming that suffering is not in their interests, then
+the practice of factory farming would only be morally justifiable if
+its abolition were to cause greater suffering or a greater amount of
+interest frustration. Certainly humans who take pleasure in eating
+animals will find it harder to satisfy these interests in the absence
+of factory farms; it may cost more and require more effort to obtain
+animal products. The factory farmers, and the industries that support
+factory farming, will also have certain interests frustrated if
+factory farming were to be abolished. How much interest frustration
+and interest satisfaction would be associated with the end to factory
+farming is largely an empirical question. But utilitarians are not
+making unreasonable predictions when they argue that on balance the
+suffering and interest frustration that animals experience in modern
+day meat production is greater than the suffering that humans would
+endure if they had to alter their current practices.</p>
+
+<p>
+Importantly, the utilitarian argument for the moral significance of
+animal suffering in meat production is not an argument for
+vegetarianism. If an animal lived a happy life and was painlessly
+killed and then eaten by people who would otherwise suffer hunger or
+malnutrition by not eating the animal, then painlessly killing and
+eating the animal would be the morally justified thing to do. In many
+parts of the world where economic, cultural, or climate conditions
+make it virtually impossible for people to sustain themselves on plant
+based diets, killing and eating animals that previously led relatively
+unconstrained lives and are painlessly killed, would not be morally
+objectionable. The utilitarian position can thus avoid certain charges
+of cultural chauvinism and moralism, charges that the animal rights
+position apparently cannot avoid.</p>
+
+<p>
+It might be objected that to suggest that it is morally acceptable to
+hunt and eat animals for those people living in Arctic regions, or for
+nomadic cultures, or for poor rural peoples, for example, is to
+potentially condone painlessly killing other morally considerable
+beings, like humans, for food consumption in similar situations. If
+violating the rights of an animal can be morally tolerated, especially
+a right to life, then similar rights violations can be morally
+tolerated. In failing to recognize the inviolability of the moral
+claims of all morally considerable beings, utilitarianism cannot
+accommodate one of our most basic prima facie principles, namely that
+killing a morally considerable being is wrong.</p>
+
+<p>
+There are at least two replies to this sort of objection. The first
+appeals to the negative side effects that killing may promote. If, to
+draw on an overused and sadly sophomoric counter-example, one person
+can be kidnapped and painlessly killed in order to provide body parts
+for four individuals who will die without them, there will inevitably
+be negative side-effects that all things considered would make the
+kidnapping wrong. Healthy people, knowing they could be used for spare
+parts, might make themselves unhealthy to avoid such a fate or they
+may have so much stress and fear that the overall state of affairs
+would be worse than that in which four people died. Appealing to
+side-effects when it comes to the wrong of killing is certainly
+plausible, but it fails to capture what is directly wrong with
+killing.</p>
+
+<p>
+A more satisfying reply would have us adopt what might be called a
+multi-factor perspective, one that takes into account the kinds of
+interest that are possible for certain kinds of morally considerable
+beings, the content of interests of the beings in question, their
+relative weight, and the context of those who have them. Consider a
+seal who has spent his life freely roaming the oceans and ice flats
+and who is suddenly and painlessly killed to provide food for a human
+family struggling to survive a bitter winter in far northern climes.
+While it is probably true that the seal had an immediate interest in
+avoiding suffering, it is less clear that the seal has a future
+directed interest in continued existence. If the seal lacks this
+future directed interest, then painlessly killing him does not violate
+this interest. The same cannot be said for the human explorer who
+finds himself face to face with a hungry family. Persons generally
+have interests in continued existence, interests that, arguably,
+non-persons do not have. So one factor that can be appealed to is that
+non-persons may not have the range of interests that persons do.</p>
+
+<p>
+An additional factor is the type of interest in question. We can think
+of interests as scalar; crucial interests are weightier than important
+interests, important interests are weightier than replaceable
+interests, and all are weightier than trivial interests or mere whims.
+When there is a conflict of interests, crucial interests will always
+override important interests, important interests will always override
+replaceable interests, etc. So if an animal has an interest in not
+suffering, which is arguably a crucial interest, or at least an
+important one, and a person has an interest in eating that animal when
+there are other things to eat, meaning that interest is replaceable,
+then the animal has the stronger interest and it would be wrong to
+violate that interest by killing the animal for food if there is
+another source of food available.</p>
+
+<p>
+Often, however, conflicts of interests are within the same category.
+The Inuit&rsquo;s interest in food is crucial and the explorer&rsquo;s
+interest in life is crucial. If we assume that the explorer cannot
+otherwise provide food for the hunter, then it looks as if there is a
+conflict within the same category. If you take the interests of an
+indigenous hunter&rsquo;s whole family into account, then their
+combined interest in their own survival appears to outweigh the
+hapless explorer&rsquo;s interest in continued existence. Indeed, if
+painlessly killing and eating the explorer were the only way for the
+family to survive, then perhaps this action would be morally condoned.
+But this is a rather extreme sort of example, one in which even our
+deepest held convictions are strained. So it is quite hard to know
+what to make of the clash between what a utilitarian would condone and
+what our intuitions tell us we should believe here. Our most basic
+prima facie principles arise and are accepted under ordinary
+circumstances. Extraordinary circumstances are precisely those in
+which such principles or precepts give
+ way.<sup>[<a href="notes.html#note-2" id="ref-2">2</a>]</sup></p>
+ 
+<p>
+The multi-factor utilitarian perspective is particularly helpful when
+considering the use of animals in medical research. According to the
+animal rights position, the use of animals in experimental procedures
+is a clear violation of their rights&mdash;they are being used as a
+mere means to some possible end&mdash;and thus animal rights
+proponents are in favor of the abolition of all laboratory research.
+The utilitarian position, particularly one that incorporates some kind
+of multi-factor perspective, might allow some research on animals
+under very specific conditions. Before exploring what a utilitarian
+might condone in the way of animal experimentation, let us first
+quickly consider what would be morally prohibited. All research that
+involves invasive procedures, constant confinement, and ultimate death
+can be said to violate the animal&rsquo;s crucial interests. Thus any
+experiments that are designed to enhance the important, replaceable,
+or trivial interests of humans or other animals would be prohibited.
+That would mean that experiments for cosmetics or household products
+are prohibited, as there are non-animal tested alternatives and many
+options already available for consumers. Certain psychological
+experiments, such as those in which infant primates are separated from
+their mothers and exposed to frightening stimuli in an effort to
+understand problems teenagers have when they enter high school, would
+also come into question. There are many examples of experiments that
+violate an animal&rsquo;s crucial interests in the hopes of satisfying
+the lesser interests of some other morally considerable being, all of
+which would be objectionable from this perspective.</p>
+
+<p>
+There are some laboratory experiments, however, that from a
+multi-factor utilitarian perspective may be permitted. These are
+experiments in which the probability of satisfying crucial or
+important interests for many who suffer from some debilitating or
+fatal disease is high, and the numbers of non-human animals whose
+crucial interests are violated is low. The psychological complexity of
+the non-humans may also be significant in determining whether the
+experiment is morally justified. In the case of experimenting in this
+limited number of cases, presumably a parallel argument could be made
+about experimenting on humans. If the chances are very high that
+experimenting on one human, who is a far superior experimental animal
+when it comes to human disease, can prevent great suffering or death
+in many humans, then the utilitarian may, if side effects are minimal,
+condone such an experiment. Of course, it is easier to imagine this
+sort of extreme case in the abstract, what a utilitarian would think
+actually morally justified again depends on the specific empirical
+data.</p>
+
+<p>
+In sum, the animal rights position takes the significance of morally
+considerable claims to be absolute. Thus, any use of animals that
+involves a disregard for their moral claims is problematic. The
+significance of an animal&rsquo;s morally considerable interests
+according to a utilitarian is variable. Whether an action is morally
+justified or permissible will depend on a number of factors. The
+utilitarian position on animals would condemn a large number of
+practices that involve the suffering and death of billions of animals,
+but there are cases in which some use of non-human animals, and
+perhaps even human animals, may be morally justified (Gruen 2021: ch.
+4; Gilbert, Kaebnick, &amp; Murray 2012). In contrast to the framing
+of these cases within an animal rights theory, for utilitarians no
+forward-looking duties to repair the harm done are generated in these
+kinds of circumstances, since all that is required of moral agents is
+to choose the course of action that generates the most good.</p>
+
+<h2 id="AltPerHumRelOthAni">3. Alternative Perspectives on Human Relations to Other Animals</h2>
+
+<p>
+Given the long-standing view that non-humans are mere things, there
+are still many who reject the arguments presented here for the moral
+considerability of non-humans and the significance of their interests.
+Nonetheless, most now realize that the task of arguing that humans
+have a unique and exclusive moral status is rather difficult. Yet even
+amongst those who do view animals as within the sphere of moral
+concern, there is disagreement about the nature and usefulness of the
+arguments presented on behalf of the moral status of animals.</p>
+
+<p>
+Increasingly, philosophers are arguing that while our behavior towards
+animals is indeed subject to moral scrutiny, the kinds of ethical
+arguments that are usually presented frame the issues in the wrong
+way. Some philosophers suggest that rational argumentation fails to
+capture those features of moral experience that allow us to really see
+why treating animals badly is wrong. The point, according to
+philosophers such as Stephen R.L. Clark (1977) and Cora Diamond
+(2001), for example, is that members of our communities, however we
+conceive of them, pull on us and it is in virtue of this pull that we
+recognize what is wrong with cruelty. Animals are individuals with
+whom we share a common life and this recognition allows us to see them
+as they are. Eating animals is wrong not because it is a violation of
+the animal&rsquo;s rights or because on balance such an act creates
+more suffering than other acts, but rather because in eating animals
+or using them in other harmful, violent ways, we do not display the
+traits of character that kind, sensitive, compassionate, mature, and
+thoughtful members of a moral community should display.</p>
+
+<p>
+According to some in the virtue ethics tradition, carefully worked out
+arguments in which the moral considerability and moral significance of
+animals are laid out will have little if any grip on our thoughts and
+actions. Rather, by perceiving the attitudes that underlie the use and
+abuse of non-human animals as shallow or cruel, one interested in
+living a virtuous life will change their attitudes and come to reject
+treating animals as food or tools for research. As Rosalind Hursthouse
+recognized after having been exposed to alternative ways of seeing
+animals:</p>
+
+<blockquote>
+
+<p>
+I began to see [my attitudes] that related to my conception of
+flesh-foods as unnecessary, greedy, self-indulgent, childish, my
+attitude to shopping and cooking in order to produce lavish dinner
+parties as parochial, gross, even dissolute. I saw my interest and
+delight in nature programmes about the lives of animals on television
+and my enjoyment of meat as side by side at odds with one
+another&hellip;Without thinking animals had rights, I began to see
+both the wild ones and the ones we usually eat as having lives of
+their own, which they should be left to enjoy. And so I changed. My
+perception of the moral landscape and where I and the other animals
+were situated in it shifted. (Hursthouse 2000: 165&ndash;166; see also
+Diamond 2001 [especially chs. 11 and 13], and Clarke 1977)</p>
+</blockquote>
+
+<p>
+Alice Crary argues that shifting perceptions of our moral landscapes
+occur because these landscapes, and more precisely the rich worlds of
+those who inhabit them, are not morally neutral. The characteristics
+that philosophers tend to look for in other animals to determine
+whether or not they are morally considerable, according to Crary, are
+already infused with moral importance, &ldquo;human beings and other
+animals have empirically discoverable moral characteristics&rdquo;
+(2016: 85) that are, as she puts it, &ldquo;inside ethics&rdquo;.
+These values often sneak in under a supposedly neutral gloss. By
+explicitly locating these characteristics inside ethics, the texture,
+quality, and purposes of our ethical reflection on moral
+considerability changes. Arriving at an adequate empirical
+understanding requires non-neutral methods, identifying historical and
+cultural perspectives as shaping how we consider other animals
+morally. What ethical questions we think are important and how we
+frame and answer them, will be different if we see our lives and the
+lives of other animals as already imbued with moral values.</p>
+
+<p>
+Other feminist philosophers have taken issue with the supposedly
+morally neutral methods of argumentation used to establish the moral
+status of animals. For many feminists the traditional methods of
+rational argumentation fail to take into account the feelings of
+sympathy or empathy that humans have towards non-humans, feelings they
+believe are central to a full account of what we owe non-humans and
+why (see Adams &amp; Donovan 1995; Donovan &amp; Adams 2007; Adams
+&amp; Gruen 2022).</p>
+
+<p>
+Feminist philosophers have also challenged the individualism that is
+central in the arguments for the moral status of animals. Rather than
+identifying intrinsic or innate properties that non-humans share with
+humans, some feminists have argued instead that we ought to understand
+moral status in relational terms given that moral recognition is
+invariably a social practice. As Elizabeth Anderson has written:</p>
+
+<blockquote>
+
+<p>
+Moral considerability is not an intrinsic property of any creature,
+nor is it supervenient on only its intrinsic properties, such as its
+capacities. It depends, deeply, on the kind of relations they can have
+with us. (Anderson 2004: 289).</p>
+</blockquote>
+
+<p>
+And these relationships needn&rsquo;t be direct. The reach of human
+activity has expanded across the entire globe and humans are entangled
+with each other and other animals in myriad ways. We participate in
+activities and institutions that directly or indirectly harm others by
+creating negative experiences, depriving them of their well-being, or
+denying them opportunities to be who they are and pursue what they
+care about. Philosophers Elisa Aaltola (2018) and Lori Gruen (2015)
+have argued for refining our empathetic imagination in order to
+improve our relationships with each other and other animals.</p>
+
+<p>
+Even though it is challenging to understand what it is like to be
+another, and even though we are limited by our inevitable
+anthropocentric perspectives, being in respectful ethical relation
+involves attempting to understand and respond to another&rsquo;s
+needs, interests, desires, vulnerabilities, hopes, and perspectives.
+What Gruen calls, &ldquo;entangled empathy&rdquo; is a process that
+involves both affect and cognition (Gruen 2015). Individuals who are
+empathizing with others respond to the other&rsquo;s condition and
+reflectively imagine themselves in the distinct position of the other
+while staying attentive to both similarities and differences between
+herself and her situation and that of the fellow creature with whom
+she is empathizing. Entangled empathy involves paying critical
+attention to the broader conditions that may negatively affect the
+experiences and flourishing of those with whom one is empathizing, and
+this requires those of us empathizing to attend to things we might not
+have otherwise. It could also help us to enhance our own experiences,
+develop our moral imagination, and become more sensitive
+perceivers.</p>
+</div>
+
+<div id="bibliography">
+
+<h2 id="Bib">Bibliography</h2>
+
+<h3 id="RefCit">References Cited</h3>
+
+<ul class="hanging">
+
+<li>Aaltola, Elisa, 2018, <em>Varieties of Empathy: Moral Psychology
+and Animal Ethics</em>, Lanham, MD: Rowman and Littlefield.</li>
+
+<li>Abbate, Cheryl, 2023, &ldquo;People and Their Animal Companions:
+Navigating Moral Constraints in a Harmful, Yet Meaningful
+World&rdquo;, <em>Philosophical Studies</em>, 180 (4): 1231&ndash;54.
+</li>
+
+<li>Adams, Carol J. and Josephine Donovan (eds.), 1995, <em>Animals
+and Women: Feminist Theoretical Explorations</em>, Durham, NC: Duke
+University Press.</li>
+
+<li>Adams, Carol J. and Lori Gruen (eds.), 2022, <em>Ecofeminism:
+Feminist Intersections with Other Animals and the Earth</em>, second
+edition, New York: Bloomsbury Press.</li>
+
+<li>Anderson, Elizabeth, 2004, &ldquo;Animal Rights and the Values of
+Nonhuman Life&rdquo;, in <em>Animal Rights: Current Debates and New
+Directions</em>, Cass R. Sunstein and Martha C. Nussbaum (eds.).
+Oxford: Oxford University Press, chapter 13.
+doi:10.1093/acprof:oso/9780195305104.003.0014</li>
+
+<li>Appleby, M. C., and P. Sand&oslash;e, 2002, &ldquo;Philosophical
+Debate on the Nature of Well-Being: Implications for Animal
+Welfare&rdquo;, <em>Animal Welfare</em>, 11 (3): 283&ndash;94. </li>
+
+<li>Attenborough, David, 1998, <em>The Life of Birds</em>, Princeton:
+Princeton University Press. [Attenborough 1998 excerpts available
+online, PBS Online.]</li>
+
+<li>Balcombe, Jonathan, 2017, <em>What a Fish Knows: The Inner Lives
+of Our Underwater Cousins, </em>Reprint edition, New York: Scientific
+American / Farrar, Straus and Giroux.</li>
+
+<li>Bekoff, Marc, 2000, <em>The Smile of a Dolphin: Remarkable
+Accounts of Animal Emotion</em>, New York: Discovery Books.</li>
+
+<li>&ndash;&ndash;&ndash;, 2007, <em>The Emotional Lives of Animals: A
+Leading Scientist Explores Animal Joy, Sorrow, and Empathy&mdash;and
+Why They Matter</em>, Novato, California: New World Library.</li>
+
+<li>Bekoff, Marc and John A. Byers (eds.), 1998, <em>Animal Play:
+Evolutionary, Comparative, and Ecological Perspectives</em>,
+Cambridge: Cambridge University Press.</li>
+
+<li>Bekoff, Marc, Colin Allen, and Gordon M. Burghardt (eds.), 2002,
+<em>The Cognitive Animal</em>, Cambridge, MA: MIT Press.</li>
+
+<li>Bekoff, Marc and Jessica Pierce, 2009, <em>Wild Justice: The Moral
+Lives of Animals</em>, Chicago: University of Chicago Press.</li>
+
+<li>Bentham, Jeremy, [1780/1789] 1982, <em>An Introduction to the
+Principles of Morals and Legislation</em>, edited by J.H. Burns and
+H.L.A. Hart, London: Methuen, 1982 (Athlone Press 1970).</li>
+
+<li>Benz-Schwarzburg, Judith, and Birte Wrage, 2023, &ldquo;Caring
+Animals and the Ways We Wrong Them&rdquo;, <em>Biology &amp;
+Philosophy</em>, 38 (4): 25.</li>
+
+<li>Birch, Jonathan, 2017, &ldquo;Animal Sentience and the
+Precautionary Principle&rdquo;, <em>Animal Sentience: An
+Interdisciplinary Journal on Animal Feeling</em>, 2 (16). </li>
+
+<li>Bovenkerk, Bernice, and Franck L. B. Meijboom, 2011, &ldquo;The
+Moral Status of Fish. The Importance and Limitations of a Fundamental
+Discussion for Practical Ethical Questions in Fish Farming&rdquo;,
+<em>Journal of Agricultural and Environmental Ethics</em>, 25 (6):
+843&ndash;60. </li>
+
+<li>Bruckner, Donald W, 2021, &ldquo;Human and Animal
+Well-Being&rdquo;, <em>Pacific Philosophical Quarterly</em>, 102 (3):
+393&ndash;412. </li>
+
+<li>Byrne, Richard W. Byrne and Andrew Whiten (eds.), 1988,
+<em>Machiavellian Intelligence: Social Expertise and the Evolution of
+Intellect in Monkeys, Apes, and Humans I</em>, Oxford: Clarendon
+Press.</li>
+
+<li>Cataldi, Suzanne Laba, 2002, &ldquo;Animals and the Concept of
+Dignity:Critical Reflections on a Circus Performance&rdquo;,
+<em>Ethics and the Environment</em>, 7 (2): 104&ndash;26.</li>
+
+<li>Cheney, Dorothy L. and Robert M. Seyfarth, 1990, <em>How Monkeys
+See the World: Inside the Mind of Another Species</em>, Chicago:
+University of Chicago Press.</li>
+
+<li>Chevalier-Skolnikoff, Suzanne, 1989, &ldquo;Spontaneous Tool Use
+and Sensorimotor Intelligence in Cebus Compared with other Monkeys and
+Apes&rdquo;, <em>Behavioral and Brain Sciences</em>, 12(3):
+561&ndash;588.</li>
+
+<li>Clark, Stephen R.L., 1977, <em>The Moral Status of Animals</em>,
+Oxford: Oxford University Press.</li>
+
+<li>Cochrane, Alasdair, 2012, <em>Animal Rights Without Liberation:
+Applied Ethics and Human Obligations</em>, New York: Columbia
+University Press.</li>
+
+<li>Crary, Alice, 2016, <em>Inside Ethics: On the Demands of Moral
+Thought</em>, Cambridge, MA: Harvard University Press.</li>
+
+<li>Crump, Andrew, Heather Browning, Alex Schnell, Charlotte Burn, and
+Jonathan Birch, 2022, &ldquo;Sentience in Decapod Crustaceans: A
+General Framework and Review of the Evidence&rdquo;, <em>Animal
+Sentience</em>, 7 (32).</li>
+
+<li>Darwin, Charles, 1871, <em>The Descent of Man</em> (2 volumes),
+London: John Murray, volume1. [Darwin 1871 available online]</li>
+
+<li>DeGrazia, David, 1996, <em>Taking Animals Seriously: Mental Life
+and Moral Status</em>, Cambridge: Cambridge University Press.</li>
+
+<li>&ndash;&ndash;&ndash;, 2002, <em>Animal Rights: A Very Short
+Introduction</em>, Oxford: Oxford University Press.</li>
+
+<li>Diamond, Cora, 2001, <em>The Realistic Spirit</em>, Cambridge, MA:
+MIT Press.</li>
+
+<li>Donaldson, Sue, and Will Kymlicka, 2011, <em>Zoopolis: A Political
+Theory of Animal Rights</em>, Oxford, New York: Oxford University
+Press.</li>
+
+<li>Donovan, Josephine and Carol J. Adams (eds.), 2007, <em>The
+Feminist Care Tradition in Animal Ethics</em>, New York: Columbia
+University Press.</li>
+
+<li>Fanon, Frantz, 1967, <em>Black Skin, White Masks</em>, New York:
+Grove Press.</li>
+
+<li>Faria, Catia, 2022, <em>Animal Ethics in the Wild: Wild Animal
+Suffering and Intervention in Nature</em>, Cambridge: Cambridge
+University Press. </li>
+
+<li>Fischer, Bob, 2016, &ldquo;Bugging the Strict Vegan&rdquo;,
+<em>Journal of Agricultural and Environmental Ethics</em>, 29 (2):
+255&ndash;63. </li>
+
+<li>Fitzpatrick, Simon, and Kristin Andrews, 2022, &ldquo;Animal
+Culture and Animal Welfare&rdquo;, <em>Philosophy of Science</em>, 89
+(5): 1104&ndash;13. </li>
+
+<li>Galdikas, Birute M.F., 1995, <em>Reflections of Eden: My Years
+with the Orangutans of Borneo</em>, Boston: Little, Brown and
+Company.</li>
+
+<li>Gilbert, Susan, Gregory E. Kaebnick, and Thomas H. Murray, 2012,
+<em>Animal Research Ethics: Evolving Views and Practices</em>,
+Hastings Center Special Report, 42(6): S1&ndash;S40. [Gilbert,
+Kaebnick, &amp; Murray 2012 available online]</li>
+
+<li>Giroux, Val&eacute;ry, 2016, &ldquo;Animals Do Have an Interest in
+Liberty&rdquo;, <em>Journal of Animal Ethics</em>, 6 (1):
+20&ndash;43.</li>
+
+<li>Goodall, Jane, 1986, <em>The Chimpanzees of Gombe: Patterns of
+Behavior</em>, Cambridge, MA: Harvard University Press.</li>
+
+<li>&ndash;&ndash;&ndash;, 2000, <em>In the Shadow of Man</em>,
+revised edition New York: Houghton Mifflin Co.</li>
+
+<li>Griffin, Donald R., 1992, <em>Animal Minds</em>, Chicago:
+University of Chicago Press.</li>
+
+<li>Gruen, Lori, 2011, <em>Ethics and Animals: An Introduction</em>,
+Cambridge: Cambridge University Press.</li>
+
+<li>&ndash;&ndash;&ndash;, 2014, &ldquo;Dignity, Captivity, and an
+Ethics of Sight&rdquo;, in <em>The Ethics of Captivity</em>, edited by
+Lori Gruen, 231&ndash;47. Oxford: Oxford University Press.</li>
+
+<li>&ndash;&ndash;&ndash;, 2015, <em>Entangled Empathy: An Alternative
+Ethic for Our Relationship with Animals</em>, Brooklyn: Lantern
+Books.</li>
+
+<li>Hauser, Marc and Susan Carey, 1997, &ldquo;Building a Cognitive
+Creature from a Set of Primitives: Evolutionary and Developmental
+Insights&rdquo;, in Denise D. Cummins and Colin Allen (eds.), <em>The
+Evolution of Mind</em>, Oxford: Oxford University Press, chapter
+3.</li>
+
+<li>Hauskeller, Michael, 2020, &ldquo;Living Like a Dog: Can the Life
+of Non-Human Animals Be Meaningful?&rdquo;, <em>Between the
+Species</em>, 23 (1).
+ [<a href="https://digitalcommons.calpoly.edu/bts/vol23/iss1/1" target="other">Hauskeller 2020 availble online</a>]</li>
+ 
+<li>Horta, Oscar, 2010, &ldquo;Debunking the Idyllic View of Natural
+Processes: Population Dynamics and Suffering in the Wild&rdquo;,
+<em>Telos: Revista Iberoamericana de Estudios Utilitaristas</em>, 17
+(1): 73&ndash;90.</li>
+
+<li>&ndash;&ndash;&ndash;, 2022, &ldquo;Speciesism&rdquo;, <em>Oxford
+Public Philosophy</em>.
+ [<a href="https://www.oxfordpublicphilosophy.com/sentience/sm" target="other">Horta 2022 available online</a></li>
+ 
+<li>Hursthouse, Rosalind, 2000, <em>Ethics, Humans and Other
+Animals</em>, London: Routledge.</li>
+
+<li>Jackson, Zakkiyyah Iman, 2020, <em>Becoming Human</em>, NY: NYU
+Press.</li>
+
+<li>Jacquet, Jennifer, Becca Franks, and Peter Godfrey-Smith, 2019,
+&ldquo;The Octopus Mind and the Argument against Farming It&rdquo;,
+<em>Animal Sentience</em>, 4 (26). </li>
+
+<li>Jamieson, Dale, 2003, <em>Morality&rsquo;s Progress: Essays on
+Humans, Other Animals, and the Rest of Nature</em>, Oxford: Oxford
+University Press.</li>
+
+<li>&ndash;&ndash;&ndash;, 2018, &ldquo;Animal Agency&rdquo;, <em>The
+Harvard Review of Philosophy</em>, 25 (October): 111&ndash;26. </li>
+
+<li>Kant, Immanuel, [1785] 1998, <em>Groundwork of the Metaphysics of
+Morals (Grundlegung zur Metaphysik der Sitten)</em>, Mary J. Gregor
+(trans.), Cambridge: Cambridge University Press.</li>
+
+<li>&ndash;&ndash;&ndash;, [1798] 2010, &ldquo;Anthropology from a
+Pragmatic Point of View (1798)&rdquo;, in <em>Anthropology, History,
+and Education</em> (Cambridge Edition of the Works of Immanuel Kant),
+Robert Louden and Gunter Zoller (eds. and trans.), Cambridge:
+Cambridge University Press, 227&ndash;429. Original is
+<em>Anthropologie in pragmatischer Hinsicht</em>, published in the
+standard Akademie der Wissenschaften edition, volume 7.
+doi:10.1017/CBO9780511791925</li>
+
+<li>&ndash;&ndash;&ndash;, [1784&ndash;5] 1997, &ldquo;Moral
+Philosophy: Collin&rsquo;s Lecture Notes&rdquo;, in <em>Lectures on
+Ethics</em> (Cambridge Edition of the Works of Immanuel Kant), P.
+Heath and J.B. Schneewind (ed. and trans.), Cambridge: Cambridge
+University Press, pp. 37&ndash;222. Original is <em>Anthropologie in
+pragmatischer Hinsicht</em>, published in the standard Akademie der
+Wissenschaften edition, volume 27. doi:10.1017/CBO9781107049512</li>
+
+<li>Kheel, Marti, 2008, <em>Nature Ethics: An Ecofeminist
+Perspective</em>, Lanham, MD: Rowman and Littlefield Publishers.</li>
+
+<li>Kianpour, Connor K., and Eze Paez, 2022, &ldquo;Red in Tooth and
+Claw No More: Animal Rights and the Permissibility to Redesign
+Nature&rdquo;, <em>Environmental Values</em>, 31 (2): 211&ndash;31.
+</li>
+
+<li>Kim, Claire Jean, 2015, <em>Dangerous Crossings: Race, Species and
+Nature in a Multicultural Age</em>, Cambridge: Cambridge University
+Press.</li>
+
+<li>King, Barbara J., 2013, <em>How Animals Grieve</em>, Chicago:
+University of Chicago Press.</li>
+
+<li>King, Barbara, and Lori Marino, 2019, &ldquo;Octopus Minds Must
+Lead to Octopus Ethics&rdquo;, <em>Animal Sentience</em>, 4 (26).
+</li>
+
+<li>Kirkden, Richard D., and Edmond A. Pajor, 2006, &ldquo;Using
+Preference, Motivation and Aversion Tests to Ask Scientific Questions
+about Animals&rsquo; Feelings&rdquo;, <em>Applied Animal Behaviour
+Science, Sentience in Animals</em>, 100 (1): 29&ndash;47. </li>
+
+<li>Knutsson, Simon, and Christian Munthe, 2017, &ldquo;A Virtue of
+Precaution Regarding the Moral Status of Animals with Uncertain
+Sentience&rdquo;, <em>Journal of Agricultural and Environmental
+Ethics</em>, 30 (2): 213&ndash;24.</li>
+
+<li>Ko, Aph and Syl Ko, 2017, <em>Aphro-ism</em>, New York: Lantern
+Books.</li>
+
+<li>Korsgaard, Christine M., 1996, <em>The Sources of
+Normativity</em>, Cambridge: Cambridge University Press.</li>
+
+<li>&ndash;&ndash;&ndash;, 2006, &ldquo;Morality and the
+Distinctiveness of Human Action&rdquo;, in <em>Primates and
+Philosophers: How Morality Evolved</em>, edited by Stephen Macedo and
+Josiah Ober, 98&ndash;119. Princeton University Press.</li>
+
+<li>&ndash;&ndash;&ndash;, 2007, &ldquo;Facing the Animal You See in
+the Mirror&rdquo;, <em>Harvard Review of Philosophy</em>, 16(1):
+4&ndash;9. doi:10.5840/harvardreview20091611</li>
+
+<li>Lazari-Radek, Katarzyna de, and Peter Singer, 2016, <em>The Point
+of View of the Universe: Sidgwick and Contemporary Ethics</em>, New
+York: Oxford University Press.</li>
+
+<li>Lessard, Micha&euml;l, 2024, &ldquo;Beyond Sentience: Legally
+Recognizing Animals&rsquo; Sociability and Agency&rdquo;, <em>Journal
+of Animal Ethics</em>, 14 (1): 89&ndash;109. </li>
+
+<li>Mather, Jennifer, 2022, &ldquo;Why Are Octopuses Going to Be the
+&lsquo;Poster Child&rsquo; for Invertebrate Welfare?&rdquo;,
+<em>Journal of Applied Animal Welfare Science</em>, 25 (1):
+31&ndash;40. </li>
+
+<li>McMahan, Jeff, 2005, &ldquo;Our Fellow Creatures&rdquo; <em>The
+Journal of Ethics</em>, 9(3&ndash;4): 353&ndash;80. </li>
+
+<li>&ndash;&ndash;&ndash;, 2008, &ldquo;Eating Animals the Nice
+Way&rdquo; <em>D&aelig;dalus</em>, 137 (1): 66&ndash;76.</li>
+
+<li>Mikhalevich, Irina, and Russell Powell, 2020, &ldquo;Minds without
+Spines: Evolutionarily Inclusive Animal Ethics&rdquo;, <em>Animal
+Sentience</em>, 5 (29). </li>
+
+<li>Mons&oacute;, Susana, Judith Benz-Schwarzburg, and Annika
+Bremhorst, 2018, &ldquo;Animal Morality: What It Means and Why It
+Matters&rdquo;, <em>The Journal of Ethics</em>, 22 (3): 283&ndash;310.
+</li>
+
+<li>Nozick, Robert, [1974] 2013, <em>Anarchy, State, and Utopia</em>;
+reprinted, New York: Basic Books, 2013.</li>
+
+<li>Nussbaum, Martha C., 2006, <em>Frontiers of Justice: Disability,
+Nationality, and Species Membership</em>, Cambridge: The Belknap
+Press.</li>
+
+<li>Pepperberg, Irene Maxine, 1999, <em>The Alex Studies: Cognitive
+and Communicative Abilities of Grey Parrots</em>, Cambridge, MA:
+Harvard University Press.</li>
+
+<li>Premack, David, 1986, <em>Gavagai! or the Future History of the
+Animal Language Controversy</em>, Cambridge, MA: MIT Press.</li>
+
+<li>Premack, David and Ann J. Premack 1984, <em>The Mind of an
+Ape</em>, New York: W W Norton &amp; Co Inc.</li>
+
+<li>Purves, Duncan, and Nicolas Delon, 2018, &ldquo;Meaning in the
+Lives of Humans and Other Animals&rdquo;, <em>Philosophical
+Studies</em>, 175 (2): 317&ndash;38. </li>
+
+<li>Regan, Tom, 1985, &ldquo;The Case for Animal Rights&rdquo;, in
+Peter Singer (ed.), <em>In Defence of Animals</em>, Oxford: Basil
+Blackwell, pp. 13&ndash;26. </li>
+
+<li>Rendell, Luke and Hal Whitehead, 2001, &ldquo;Culture in Whales
+and Dolphins&rdquo;, <em>Behavioral and Brian Sciences</em>, 24(2):
+309&ndash;324. </li>
+
+<li>Roberts, W.A., 1998, <em>Principles of Animal Cognition</em>,
+Boston: McGraw-Hill.</li>
+
+<li>Rumbaugh, Duane M. and Sue Savage-Rumbaugh, 1999, &ldquo;Primate
+Language&rdquo; in Robert A. Wilson &amp; Frank Keil (eds.) <em>The
+MIT Encyclopedia of the Cognitive Sciences</em>, Cambridge, MA: MIT
+Press.</li>
+
+<li>Safran-Foer, Jonathan, 2010, <em>Eating Animals</em>, New York:
+Little Brown and Company.</li>
+
+<li>Schmidt, Andreas T., 2015, &ldquo;Why Animals Have an Interest in
+Freedom&rdquo;, <em>Historical Social Research</em>, 40 (4):
+92&ndash;109.</li>
+
+<li>Sebo, Jeff, 2017, &ldquo;Agency and Moral Status&rdquo;,
+<em>Journal of Moral Philosophy</em>, 14 (1): 1&ndash;22. </li>
+
+<li>&ndash;&ndash;&ndash;, 2023, &ldquo;The Repugnant Conclusion:
+Utilitarianism, Insects, Microbes, and AI Systems&rdquo;, <em>Ethics,
+Policy &amp; Environment</em>, 26(2): 249-264.
+doi:10.1080/21550085.2023.2200724</li>
+
+<li>Singer, Peter, 2023, <em>Animal Liberation Now</em>, New York:
+Harper Perennial.</li>
+
+<li>&ndash;&ndash;&ndash;, [1979] 1993, <em>Practical Ethics</em>,
+second edition, Cambridge: Cambridge University Press; first edition,
+1979.</li>
+
+<li>&ndash;&ndash;&ndash;, 1974, &ldquo;All Animals are Equal&rdquo;,
+<em>Philosophic Exchange</em>, 5(1), Article 6.</li>
+
+<li>Shriver, Adam, 2009, &ldquo;Knocking Out Pain in Livestock: Can
+Technology Succeed Where Morality Has Stalled?&rdquo;,
+<em>Neuroethics</em>, 2 (3): 115&ndash;24. </li>
+
+<li>Shriver, Adam, and Emilie McConnachie, 2018, &ldquo;Genetically
+Modifying Livestock for Improved Welfare: A Path Forward&rdquo;,
+<em>Journal of Agricultural and Environmental Ethics</em>, 31 (2):
+161&ndash;80. </li>
+
+<li>Thomas, Joshua Lewis, 2018, &ldquo;Can Only Human Lives Be
+Meaningful?&rdquo;, <em>Philosophical Papers</em>, 47 (2):
+265&ndash;97. </li>
+
+<li>Tomasello, Michael and Josep Call, 1997, <em>Primate
+Cognition</em>, Oxford: Oxford University Press.</li>
+
+<li>VanDeVeer, Donald, 1979, &ldquo;Interspecific Justice&rdquo;,
+<em>Inquiry</em>, 22(1&ndash;4): 55&ndash;79. </li>
+
+<li>Varner, Gary E., 2012, <em>Personhood, Ethics, and Animal
+Cognition: Situating Animals in Hare&rsquo;s Two Level
+Utilitarianism</em>, New York: Oxford University Press. </li>
+
+<li>Visalberghi, Elisabetta, 1997, &ldquo;Success and Understanding in
+Cognitive Tasks: A Comparison Between Cebus apella and Pan
+troglodytes&rdquo;, <em>International Journal of Primatology</em>,
+18(5): 811&ndash;830. </li>
+
+<li>de Waal, Frans B.M., 1989, <em>Peacemaking Among Primates</em>,
+Cambridge, MA: Harvard University Press.</li>
+
+<li>de Waal, Frans B.M. and Frans Lanting, 1997, <em>Bonobo: The
+Forgotten Ape</em>, Berkeley: University of California Press.</li>
+
+<li>Walker, Rebecca L., 2007, &ldquo;Animal Flourishing: What Virtue
+Requires of Human Animals&rdquo;, in <em>Working Virtue: Virtue Ethics
+and Contemporary Moral Problems</em>, Rebecca Walker and Philip J.
+Ivanhoe (eds.) Oxford: Oxford University Press.</li>
+
+<li>Weir, Alex A.S., Jackie Chappell, and Alex Kacelnik, 2002,
+&ldquo;Shaping of Hooks in New Caledonian Crows&rdquo;,
+<em>Science</em>, 297(5583): 981. doi:10.1126/science.1073433</li>
+
+<li>Whiten, Andrew and Richard W. Byrne (eds.), 1997,
+<em>Machiavellian Intelligence II: Extensions and Evaluations</em>,
+Cambridge: Cambridge University Press.</li>
+
+<li>Whiten, A., J. Goodall, W.C. McGew, T. Nishida, V. Reynolds, Y.
+Sugiyama, C.E.G. Tutin, R.W. Wrangham, &amp; C. Boesch, 1999,
+&ldquo;Cultures in chimpanzees&rdquo;, <em>Nature</em>, 399(6737):
+682&ndash;685.</li>
+
+<li>Wilcox, Marc G, 2020a, &ldquo;Animals and the Agency Account of
+Moral Status&rdquo;, <em>Philosophical Studies</em>, 177 (7):
+1879&ndash;99. </li>
+
+<li>&ndash;&ndash;&ndash;, 2020b, &ldquo;The Intrinsic Value of
+Liberty for Non-Human Animals&rdquo;, <em>The Journal of Value
+Inquiry</em>, September. </li>
+
+<li>Wood, Allen W., 1998, &ldquo;Kant on Duties Regarding Nonrational
+Nature&rdquo; <em>Proceedings of the Aristotelian Society
+Supplement</em>, LXXII: 189&ndash;210.
+doi:10.1111/1467-8349.00042</li>
+
+<li>Woods, Vanessa, 2010, <em>Bonobo Handshake: A Memoir of Love and
+Adventure in the Congo</em>, New York: Gotham Books.</li>
+</ul>
+
+<h3 id="FurRea">Further Reading</h3>
+
+<ul class="hanging">
+
+<li>Beauchamp, Tom L. and R.G. Frey (eds.) 2011, <em>The Oxford
+Handbook of Animal Ethics</em>, New York: Oxford.
+doi:10.1093/oxfordhb/9780195371963.001.0001</li>
+
+<li>Brambell, Ben and Bob Fisher, 2015, <em>The Moral Complexity of
+Eating Meat</em>, New York: Oxford University Press.
+doi:10.1093/acprof:oso/9780199353903.001.0001</li>
+
+<li>Chignell, Andrew, Terence Cuneo, and Matthew C. Halteman (eds.)
+2015, <em>Philosophy Comes to Dinner: Arguments About the Ethics of
+Eating</em>, New York: Routledge.</li>
+
+<li>Derrida, Jacques, 2008, <em>The Animal That Therefore I Am</em>
+(<em>Animal que donc je suis</em>), Mary-Louise Mallet (ed.) and David
+Wills (trans.), New York: Fordham University Press.</li>
+
+<li>Donaldson, Sue and Will Kymlicka, 2011, <em>Zoopolis: A Political
+Theory of Animal Rights</em>, New York: Oxford University Press.</li>
+
+<li>Gruen, Lori, 2016, &ldquo;Conscious Animals and the Value of
+Experience&rdquo; in Stephen Gardiner and Allen Thompson (eds.)
+<em>The Oxford Handbook of Environmental Ethics</em>, New York: Oxford
+University Press, chapter 8.</li>
+
+<li>Haraway, Donna, 2003, <em>The Companion Species Manifesto: Dogs,
+People and Significant Otherness</em>, Chicago, IL: Prickly Paradigm
+Press.</li>
+
+<li>Jones, Robert C., 2013, &ldquo;Science, Sentience, and Animal
+Welfare&rdquo;, <em>Biology and Philosophy</em>, 28(1): 1&ndash;30.
+doi:10.1007/s10539-012-9351-1</li>
+
+<li>Kagan, Shelly, 2011, &ldquo;Do I Make a Difference?&rdquo;,
+<em>Philosophy &amp; Public Affairs</em>, 39(2): 105&ndash;141.
+doi:10.1111/j.1088-4963.2011.01203.x</li>
+
+<li>Korsgaard, Christine M., 2013, &ldquo;Getting Animals in
+View&rdquo;, <em>The Point</em>, 6.
+ [<a href="https://thepointmag.com/2012/examined-life/getting-animals-view" target="other">Korsgaard 2013 available online</a>]</li>
+ 
+<li>McMahan, Jeff, 2008, &ldquo;Eating Animals the Nice Way&rdquo;,
+<em>Daedalus</em>, 127(1): 66&ndash;76.
+doi:10.1162/daed.2008.137.1.66</li>
+
+<li>Midgley, Mary, 1983, <em>Animals and Why They Matter</em>, Athens,
+GA: University of Georgia Press.</li>
+
+<li>Pachirat, Timothy, 2011, <em>Every Twelve Seconds: Industrialized
+Slaughter and the Politics of Sight</em>, New Haven, CT: Yale
+University Press.</li>
+
+<li>Rachels, James, 1990, <em>Created from Animals: The Moral
+Implications of Darwinism</em>, Oxford: Oxford University Press.</li>
+
+<li>Rowlands, Mark, 2012, <em>Can Animals Be Moral?</em> New York:
+Oxford University Press.</li>
+
+<li>Ryder, Richard D., 1989, <em>Animal Revolution: Changing Attitudes
+Toward Speciesism</em>, Oxford: Basil Blackwell.</li>
+
+<li>Sapontzis, Steve F. (ed.), 2004, <em>Food for Thought: The Debate
+Over Eating Meat</em>, NY: Prometheus Press.</li>
+</ul>
+</div> 
+
+<div id="academic-tools">
+<h2 id="Aca">Academic Tools</h2>
+
+<blockquote>
+<table class="vert-top">
+<tr>
+<td><img src="../../symbols/sepman-icon.jpg" alt="sep man icon" /></td>
+<td><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=moral-animal" target="other">How to cite this entry</a>.</td>
+</tr>
+
+<tr>
+<td><img src="../../symbols/sepman-icon.jpg" alt="sep man icon" /></td>
+<td><a href="https://leibniz.stanford.edu/friends/preview/moral-animal/" target="other">Preview the PDF version of this entry</a> at the
+ <a href="https://leibniz.stanford.edu/friends/" target="other">Friends of the SEP Society</a>.</td>
+</tr>
+
+<tr>
+<td><img src="../../symbols/inpho.png" alt="inpho icon" /></td>
+<td><a href="https://www.inphoproject.org/entity?sep=moral-animal&amp;redirect=True" target="other">Look up topics and thinkers related to this entry</a>
+ at the Internet Philosophy Ontology Project (InPhO).</td>
+</tr>
+
+<tr>
+<td><img src="../../symbols/pp.gif" alt="phil papers icon" /></td>
+<td><a href="https://philpapers.org/sep/moral-animal/" target="other">Enhanced bibliography for this entry</a>
+at <a href="https://philpapers.org/" target="other">PhilPapers</a>, with links to its database.</td>
+</tr>
+
+</table>
+</blockquote>
+</div>
+
+<div id="other-internet-resources">
+
+<h2 id="Oth">Other Internet Resources</h2>
+
+<ul>
+
+ <li><a href="https://web.archive.org/web/20160216081457/http://ethics.sandiego.edu/Applied/Animals/" target="other">The Moral Status of Animals</a>,
+ webpage at <em>Ethics Updates</em> (Larry Hinman, University of San
+Diego), now only available at the Internet Archive.</li>
+
+<li>Bentham, J.,
+ <a href="http://www.econlib.org/library/Bentham/bnthPML.html" target="other">An Introduction to the Principles of Morals and Legislation</a>,
+ at the Library of Economics and Liberty.</li>
+
+ <li><a href="https://www.nonhumanrights.org/hercules-leo/" target="other">Nonhuman Rights Project: Hercules and Leo case</a>
+ 
+<ul>
+
+ <li><a href="https://www.nonhumanrights.org/content/uploads/Suffolk-Verified-Petition-of-E.Stein-and-S.Wise_.pdf" target="other">petition</a></li>
+ 
+ <li><a href="https://www.nonhumanrights.org/content/uploads/Suffolk-Ex.-7-Jensvold-Affidavit-to-VP.pdf" target="other">Affidavit by Mary Lee Jensvold</a></li>
+ 
+ <li><a href="https://www.nonhumanrights.org/content/uploads/Suffolk-Ex.-8-K-ing-Affidavit-to-VP-1.pdf" target="other">Affidavit by James King</a></li>
+ 
+ <li><a href="https://www.nonhumanrights.org/content/uploads/Suffolk-Ex.-11-Osvath-Affidavit-to-VP.pdf" target="other">Affidavit by Mathias Osvath</a></li>
+ </ul> </li>
+</ul>
+</div>
+
+<div id="related-entries">
+
+<h2 id="Rel">Related Entries</h2>
+
+<p>
+
+ <a href="../cognition-animal/">animal: cognition</a> |
+ <a href="../consciousness-animal/">animal: consciousness</a> |
+ <a href="../bentham/">Bentham, Jeremy</a> |
+ <a href="../consequentialism/">consequentialism</a> |
+ <a href="../emotion/">emotion</a> |
+ <a href="../feminism-ethics/">feminist philosophy, interventions: ethics</a> |
+ <a href="../feminism-political/">feminist philosophy, interventions: political philosophy</a> |
+ <a href="../kant/">Kant, Immanuel</a> |
+ <a href="../rights/">rights</a>
+
+</p>
+</div> 
+</div><!-- #aueditable --><!--DO NOT MODIFY THIS LINE AND BELOW-->
+
+<!-- END ARTICLE HTML -->
+
+</div> <!-- End article-content -->
+
+  <div id="article-copyright">
+    <p>
+ <a href="../../info.html#c">Copyright &copy; 2024</a> by
+
+<br />
+<a href="http://www.lorigruen.com/" target="other">Lori Gruen</a>
+&lt;<a href="m&#97;ilto:lgruen&#37;40wesleyan&#37;2eedu"><em>lgruen<abbr title=" at ">&#64;</abbr>wesleyan<abbr title=" dot ">&#46;</abbr>edu</em></a>&gt;<br />
+<a href="http://susanamonso.com/" target="other">Susana Mons&oacute;</a>
+&lt;<a href="m&#97;ilto:smonso&#37;40fsof&#37;2euned&#37;2ees"><em>smonso<abbr title=" at ">&#64;</abbr>fsof<abbr title=" dot ">&#46;</abbr>uned<abbr title=" dot ">&#46;</abbr>es</em></a>&gt;
+    </p>
+  </div>
+
+</div> <!-- End article -->
+
+<!-- NOTE: article banner is outside of the id="article" div. -->
+<div id="article-banner" class="scroll-block">
+  <div id="article-banner-content">
+    <a href="../../fundraising/">
+    Open access to the SEP is made possible by a world-wide funding initiative.<br />
+    The Encyclopedia Now Needs Your Support<br />
+    Please Read How You Can Help Keep the Encyclopedia Free</a>
+  </div>
+</div> <!-- End article-banner -->
+
+    </div> <!-- End content -->
+
+    <div id="footer">
+
+      <div id="footer-menu">
+        <div class="menu-block">
+          <h4><i class="icon-book"></i> Browse</h4>
+          <ul role="menu">
+            <li role="menuitem"><a href="../../contents.html">Table of Contents</a></li>
+            <li role="menuitem"><a href="../../new.html">What's New</a></li>
+            <li role="menuitem"><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+            <li role="menuitem"><a href="../../published.html">Chronological</a></li>
+            <li role="menuitem"><a href="../../archives/">Archives</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-info-sign"></i> About</h4>
+          <ul role="menu">
+            <li role="menuitem"><a href="../../info.html">Editorial Information</a></li>
+            <li role="menuitem"><a href="../../about.html">About the SEP</a></li>
+            <li role="menuitem"><a href="../../board.html">Editorial Board</a></li>
+            <li role="menuitem"><a href="../../cite.html">How to Cite the SEP</a></li>
+            <li role="menuitem"><a href="../../special-characters.html">Special Characters</a></li>
+            <li role="menuitem"><a href="../../tools/">Advanced Tools</a></li>
+            <li role="menuitem"><a href="../../accessibility.html">Accessibility</a></li>
+            <li role="menuitem"><a href="../../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-leaf"></i> Support SEP</h4>
+          <ul role="menu">
+            <li role="menuitem"><a href="../../support/">Support the SEP</a></li>
+            <li role="menuitem"><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+            <li role="menuitem"><a href="../../support/donate.html">Make a Donation</a></li>
+            <li role="menuitem"><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+          </ul>
+        </div>
+      </div> <!-- End footer menu -->
+
+      <div id="mirrors">
+        <div id="mirror-info">
+          <h4><i class="icon-globe"></i> Mirror Sites</h4>
+          <p>View this site from another server:</p>
+        </div>
+        <div class="btn-group open">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="https://plato.stanford.edu/">
+            <span class="flag flag-usa"></span> USA (Main Site) <span class="caret"></span>
+            <span class="mirror-source">Philosophy, Stanford University</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../mirrors.html">Info about mirror sites</a></li>
+          </ul>
+        </div>
+      </div> <!-- End mirrors -->
+      
+      <div id="site-credits">
+        <p>The Stanford Encyclopedia of Philosophy is <a href="../../info.html#c">copyright &copy; 2024</a> by <a href="https://mally.stanford.edu/">The Metaphysics Research Lab</a>, Department of Philosophy, Stanford University</p>
+        <p>Library of Congress Catalog Data: ISSN 1095-5054</p>
+      </div> <!-- End site credits -->
+
+    </div> <!-- End footer -->
+
+  </div> <!-- End container -->
+
+   <!-- NOTE: Script required for drop-down button to work (mirrors). -->
+  <script>
+    $('.dropdown-toggle').dropdown();
+  </script>
+
+</body>
+</html>

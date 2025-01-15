@@ -8,7 +8,6 @@ export default function engros(html: string, referenceLink: string, proxyLink: s
     Document.parseHTMLUnsafe(html),
   );
 
-  // Temporary fix, delete later
   if (!document.querySelector('base')) {
     document.head.insertBefore(<base
       href={referenceLink}/>, document.head.firstChild);
@@ -21,9 +20,10 @@ export default function engros(html: string, referenceLink: string, proxyLink: s
   const readabilityResult = readability!.content;
   const rawContent = readabilityResult.firstChild?.firstChild!;
   const rawElements = [...rawContent.childNodes].filter(node => node instanceof HTMLElement);
+  
   const elements = [<h1>{readability!.title}</h1> as HTMLElement, ...rawElements];
 
-  // Temporary fix, delete later
+  // Parsing Wikibooks titles
   if (readability!.title.includes("Wikibooks, open")) {
     var title = readability!.title.split(" - ")[0];
     title = title.split("/", 2).join("/ ");
@@ -42,6 +42,7 @@ export default function engros(html: string, referenceLink: string, proxyLink: s
     {buildSlides(elements)}
   </div> as HTMLElement;
 }
+
 
 function postprocessAnchorLinks(elements: HTMLElement[], referenceLink: string) {
   elements.forEach(readabilityOutputElement => {
@@ -80,7 +81,7 @@ function preprocessHeaders(
 ): Document {
   const BROKEN_HEADER_CLASSES = ['mw-heading'];
 
-  const cleanHeaderMutatation = (header: Element): void => {
+  const cleanHeaderMutation = (header: Element): void => {
 
     header.removeAttribute("class");
     header.removeAttribute("id");
@@ -116,7 +117,7 @@ function preprocessHeaders(
   const modifiedDocument = document.cloneNode(true) as Document;
   if (mustPruneInsideHeaders) {
     [...modifiedDocument.querySelectorAll("h1, h2, h3, h4, h5, h6")]
-      .forEach(cleanHeaderMutatation);
+      .forEach(cleanHeaderMutation);
   }
 
   if (mustPruneHeaderDivs) {
