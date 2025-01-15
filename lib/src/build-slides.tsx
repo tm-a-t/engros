@@ -4,7 +4,7 @@ import {isHeading, last, sum} from './utils';
 import {addBackground} from './animated-background';
 
 export function buildSlides(elements: HTMLElement[]): HTMLElement[] {
-  const BACKGROUND_COLOR_CLASSES = ['bg-violet-500', 'bg-blue-500', 'bg-rose-500', 'bg-amber-500'];
+  const BACKGROUND_COLOR_CLASSES = ['bg-violet-400', 'bg-blue-400', 'bg-rose-400', 'bg-amber-400'];
 
   const groups = groupElements(elements);
 
