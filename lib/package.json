@@ -1,5 +1,5 @@
 {
-  "name": "generative-layout",
+  "name": "engros",
   "version": "1.0.0",
   "main": "./dist/engros.umd.cjs",
   "module": "./dist/engros.js",

@@ -73,6 +73,8 @@
         /* To display as a mobile screen on desktop */
         max-width: 28rem;
         margin: 0 auto;
+
+        @apply text-zinc-950;
     }
 
     .slide {
