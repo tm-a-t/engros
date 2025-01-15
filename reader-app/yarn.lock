@@ -960,10 +960,10 @@ emoji-regex@^9.2.2:
   resolved "https://registry.npmjs.org/emoji-regex/-/emoji-regex-9.2.2.tgz"
   integrity sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==
 
-engros@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/engros/-/engros-1.0.4.tgz#bfeed6759c67ec7c0107bbffd3912eb174a6eef0"
-  integrity sha512-M5dWwEMLD8nqjubFj+gl6YYoozDMGxzrSeRextiK6fFx0F/gFdlm+D86wmeZAUDyS0Z28u3VUCYntN53Uvhb1w==
+engros@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/engros/-/engros-1.0.7.tgz#5097718eb4ea1d789b7d5d6e9076b1d5de841f3e"
+  integrity sha512-iH3z9ULxVdka1vtxEHFWMNgd5CpZqmOY7Pro8UXCBYm0iKSxXsbLqi0DXZ+M1wOzvA97CSdXkwPMENkAH2hMpA==
   dependencies:
     "@fontsource-variable/golos-text" "^5.1.0"
     "@fontsource/pt-mono" "^5.1.0"

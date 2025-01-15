@@ -14,9 +14,14 @@ export default function Viewer({originalHTML, url}: {originalHTML: string, url: 
       return
     }
 
-    const content = engros(originalHTML, url, origin + '/')
-      ?? <div className="text-center">We couldn't find an article on this page :c</div>;
-    
+    let content = engros(originalHTML, url, origin + '/')
+    if (content === null) {
+      content = document.createElement("div");
+      content.style.textAlign = "center";
+      content.style.marginTop = "0.5rem";
+      content.innerText = "We couldn't find an article on this page :c";
+    }
+
     if (containerRef.current) {
       containerRef.current.appendChild(content);
     }
