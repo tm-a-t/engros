@@ -3,21 +3,24 @@ import * as React from '@turtlemay/jsx-dom';
 import {buildSlides} from './build-slides';
 import './style/style.css';
 
-export default function engros(html: string, referenceLink: string, proxyLink: string): HTMLElement {
+export default function engros(html: string, referenceLink: string, proxyLink: string): HTMLElement | null {
   const document = preprocessHeaders(
     Document.parseHTMLUnsafe(html),
   );
 
   if (!document.querySelector('base')) {
-    document.head.insertBefore(<base
-      href={referenceLink}/>, document.head.firstChild);
+    document.head.insertBefore(<base href={referenceLink}/>, document.head.firstChild);
   }
 
   const readability = new Readability(
     document,
     {serializer: el => el},
   ).parse();
-  const readabilityResult = readability!.content;
+  if (readability === null) {
+    return null;
+  }
+
+  const readabilityResult = readability.content;
 
   let rawElementsUnfiltered: ChildNode[] = [];
 
@@ -44,10 +47,10 @@ export default function engros(html: string, referenceLink: string, proxyLink: s
 
   }
   
-  const elements = [<h1>{readability!.title}</h1> as HTMLElement, ...rawElements];
+  const elements = [<h1>{readability.title}</h1> as HTMLElement, ...rawElements];
   // Parsing Wikibooks titles
-  if (readability!.title.includes("Wikibooks, open")) {
-    var title = readability!.title.split(" - ")[0];
+  if (readability.title.includes("Wikibooks, open")) {
+    var title = readability.title.split(" - ")[0];
     title = title.split("/", 2).join("/ ");
 
     elements[0] = <h1>{title}</h1> as HTMLElement;

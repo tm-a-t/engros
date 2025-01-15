@@ -20,8 +20,11 @@ export default async function Page({params}: { params: Promise<{ url: string[] }
 
   return (
     <div>
-      <Link className="absolute text-4xl px-2 text-inherit hover:text-inherit hover:opacity-50 z-10" href="/"
-            aria-label="Home">←</Link>
+      <div className="absolute font-bold flex justify-between px-2 py-2 z-10 left-0 top-0 right-0 mix-blend-difference">
+        <Link className="text-inherit hover:text-inherit hover:opacity-50" href="/">Home</Link>
+        <a className="text-inherit hover:text-inherit hover:opacity-50" href={url} target="_blank">Original</a>
+      </div>
+
       {content}
     </div>
   );

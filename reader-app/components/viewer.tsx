@@ -14,7 +14,9 @@ export default function Viewer({originalHTML, url}: {originalHTML: string, url: 
       return
     }
 
-    const content = engros(originalHTML, url, origin + '/');
+    const content = engros(originalHTML, url, origin + '/')
+      ?? <div className="text-center">We couldn't find an article on this page :c</div>;
+    
     if (containerRef.current) {
       containerRef.current.appendChild(content);
     }
