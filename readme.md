@@ -2,18 +2,21 @@
 
 **Generative Layout for Educational Texts**
 
+## Demo
+
+https://github.com/user-attachments/assets/cd9e7b13-80e7-418c-ae96-ec0ae256869e
 
 ## Library
 
-Engros library generates an engaging narrative given a text
+Engros generates an engaging narrative from HTML source.
 
-### Install
+#### Install
 
 ```shell
 npm install engros
 ```
 
-### Usage
+#### Usage
 
 `engros(html: string, referenceLink: string, proxyLink: string | null = null): HTMLElement | null `
 
@@ -21,7 +24,7 @@ npm install engros
 - `referenceLink`: a link to the original HTML source to resolve relative paths for images etc.
 - `proxyLink`: if provided, used to resolve in-text relative links.
 
-### Example
+#### Example
 
 1. Build Engros narrative:
 
