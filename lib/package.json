@@ -12,7 +12,7 @@
   },
   "type": "module",
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "description": "",
   "devDependencies": {
     "@types/color-convert": "^2.0.4",
