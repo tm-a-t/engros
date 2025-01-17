@@ -2,23 +2,21 @@
 
 We redesigned the internet for Gen Z 💀💀💀
 
-How to use this? Go to https://engros.vercel.app, paste a link to any online article, and get a **COLORFUL FLIPBOOK**. For example, here’s an article about monads in Haskell: https://engros.vercel.app/en.wikibooks.org/wiki/Haskell/Understanding_monads
+Go to https://engros.vercel.app, paste a link to any online article, and get a **COLORFUL PAGE**. Here’s an article about monads in Haskell: https://engros.vercel.app/en.wikibooks.org/wiki/Haskell/Understanding_monads. 
 
-Yes, _it’s totally cursed._
-
-If you install this reader as an app (PWA), you can open any link in it via the Share menu. Links within the text also open in the reader, so by our devious design, you’ll end up trapped in a vicious cycle!
-
-To take over the world and zombify young minds with this unique article format, we turned it into a JavaScript library. So, if you’re an educator who’s embraced the world of infinite and effortless dopamine, you can generate slides from educational materials with just a few lines of code.
-
-🤯🤯🤯🤯🤯🤯
+Video example: 
 
 https://github.com/user-attachments/assets/cd9e7b13-80e7-418c-ae96-ec0ae256869e
 
+Yes, it’s totally cursed.
+
+If you install this reader as an app (PWA), you can open any link in it via the Share menu. Links within the text also open in the reader, so by our devious design, you’ll end up trapped in a vicious cycle.
+
+To take over the world and zombify young minds with this unique article format, we turned it into a JavaScript library. So, if you’re an educator who’s embraced the world of infinite and effortless dopamine, you can generate slides from educational materials with just a few lines of code.
+
 ## How it works
 
-No LLMs (for now). All we use is a set of predefined layouts and a bit randomized backgrounds. The algorithm splits the given article into slides so there is not much text on each of them.
-
-By the way, we extract the basic structure from web articles using Mozilla’s Readability.js: the same library that is used in Firefox Reader view.
+No LLMs; all we use is a set of predefined layouts and a bit randomized backgrounds. The algorithm splits the given article into slides with a little text on each. By the way, we extract the basic structure from web articles using Mozilla’s Readability.js: the same library that is used in Firefox Reader view.
 
 <details>
 
@@ -30,7 +28,7 @@ By the way, we extract the basic structure from web articles using Mozilla’s R
 
 ## Engros Library
 
-The library is not stable and the API will change. It only works in browser for now, but we will hopefully fix this.
+The library is not stable yet and the API will change. It only works in browser for now, but we will hopefully fix this.
 
 #### Install
 
@@ -48,7 +46,7 @@ npm install engros
 
 #### Example
 
-1. Generate the content:
+1. Generate the content and place it in the body:
 
     ```javascript
     import engros from 'engros';
