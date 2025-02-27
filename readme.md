@@ -1,18 +1,18 @@
 # 📢🚀 Scholar.Love 💀🔥
 
-🔥 WE JUST REINVENTED THE INTERNET FOR GEN Z 🔥 (yes, fr fr, no cap 🤡💀💀💀)
+🔥 **WE JUST REINVENTED THE INTERNET FOR GEN Z** 🔥 (yes, fr fr, no cap 🤡💀💀💀)
 
-📚 Scholar.Love 🫀 is like… THE ULTIMATE WEAPON 🗡️ for reading stuff online 🫡. Articles? ✅ Textbooks? ✅ The entirety of human knowledge? ✅ (well, almost).
+📚 **Scholar.Love** 🫀 is like… THE ULTIMATE WEAPON 🗡️ for **reading stuff online** 🫡. Articles? ✅ Textbooks? ✅ **The entirety of human knowledge?** ✅ (well, almost).
 
-💥 HOW TO USE THIS WILD THING: 💥
+💥 **HOW TO USE THIS WILD THING:** 💥
 
-1️⃣ Step 1: GO TO 👉 [scholar.love](https://scholar.love)<br>
-2️⃣ Step 2: Paste a link. Any link. (Well, text-based. Don’t try your Spotify Wrapped, chief.)<br>
-3️⃣ Step 3: BOOM 💣 A FULLY JUICED, DRIP-DRENCHED, RIZZMAXXED PAGE appears. 📜✨
+1️⃣ **Step 1:** GO TO 👉 [scholar.love](https://scholar.love)<br>
+2️⃣ **Step 2:** Paste a link. Any link. (Well, text-based. Don’t try your Spotify Wrapped, chief.)<br>
+3️⃣ **Step 3:** BOOM 💣 **A FULLY JUICED, DRIP-DRENCHED, RIZZMAXXED PAGE** appears. 📜✨
 
-🕶️ Example? Oh, we got you. Wanna read about MONADS in HASKELL? (why tho???) Try this: [scholar.love/en.wikibooks.org/wiki/Haskell/Understanding_monads](https://scholar.love/en.wikibooks.org/wiki/Haskell/Understanding_monads) 🤯
+🕶️ **Example? Oh, we got you.** Wanna read about MONADS in HASKELL? (why tho???) Try this: [scholar.love/en.wikibooks.org/wiki/Haskell/Understanding_monads](https://scholar.love/en.wikibooks.org/wiki/Haskell/Understanding_monads) 🤯
 
-📺 LIVE FOOTAGE OF IT IN ACTION:
+📺 **LIVE FOOTAGE OF IT IN ACTION:**
 
 https://github.com/user-attachments/assets/cd9e7b13-80e7-418c-ae96-ec0ae256869e
 
