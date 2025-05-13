@@ -28,9 +28,10 @@
   "dependencies": {
     "@fontsource-variable/golos-text": "^5.1.0",
     "@fontsource/pt-mono": "^5.1.0",
-    "@mozilla/readability": "^0.5.0",
     "@turtlemay/jsx-dom": "^1.1.3",
     "color-convert": "^2.0.1",
+    "defuddle": "^0.6.3",
+    "jsdom": "^26.1.0",
     "three": "^0.134.0",
     "vanta": "^0.5.24"
   },
@@ -46,6 +47,12 @@
       "require": {
         "types": "./dist/index.d.ts",
         "default": "./dist/engros.umd.cjs"
+      }
+    },
+    "./node": {
+      "import": {
+        "types": "./dist/node.d.ts",
+        "default": "./dist/node.js"
       }
     },
     "./style.css": "./dist/style.css"

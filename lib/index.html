@@ -16,7 +16,7 @@
       const html = await res.text();
       const proxy_url = 'http://localhost:3000/';
 
-      document.body.replaceChildren(engros(html, url_wikibooks, proxy_url));
+      document.body.replaceChildren(engros(html, {referenceLink: url_wikibooks, proxyLink: proxy_url}));
     </script>
 </head>
 <body>
