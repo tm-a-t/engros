@@ -24,15 +24,18 @@ export function buildSlides(elements: HTMLElement[]): HTMLElement[] {
     const slide = layout.apply(groupedElements) as HTMLElement;
     slides.push(slide);
 
-    const lastBackgrounds = usedBackgrounds.slice(usedBackgrounds.length - 2, usedBackgrounds.length);
-    if ((slide.querySelector('h1,h2,h3,h4,h5,h6,blockquote') !== null && lastBackgrounds.some(bg => bg !== 'animation'))
-      || lastBackgrounds.every(bg => bg !== 'animation')) {
-      usedBackgrounds.push('animation');
-      addBackground(slide);
-    } else {
-      usedBackgrounds.push('color');
-      slide.classList.add(BACKGROUND_COLOR_CLASSES[index % BACKGROUND_COLOR_CLASSES.length]);
-    }
+    addBackground(slide);
+
+    /* Alternate between plain-colored and animated backgrounds */
+    // const lastBackgrounds = usedBackgrounds.slice(usedBackgrounds.length - 2, usedBackgrounds.length);
+    // if ((slide.querySelector('h1,h2,h3,h4,h5,h6,blockquote') !== null && lastBackgrounds.some(bg => bg !== 'animation'))
+    //   || lastBackgrounds.every(bg => bg !== 'animation')) {
+    //   usedBackgrounds.push('animation');
+    //   addBackground(slide);
+    // } else {
+    //   usedBackgrounds.push('color');
+    //   slide.classList.add(BACKGROUND_COLOR_CLASSES[index % BACKGROUND_COLOR_CLASSES.length]);
+    // }
   });
 
   return slides;
