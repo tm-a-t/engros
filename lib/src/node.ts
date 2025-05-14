@@ -15,8 +15,3 @@ export default async function engros(html: string | JSDOM, options: ProcessOptio
     const cleanJsdom = new JSDOM(parseResult.content);
     return process(cleanJsdom.window.document, parseResult, options);
 }
-
-export async function engrosFromUrl(url: string, options: ProcessOptions): Promise<HTMLElement | null> {
-    const jsdom = await JSDOM.fromURL(url);
-    return engros(jsdom, options);
-}

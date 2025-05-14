@@ -18,7 +18,16 @@ export function preprocessDocument(html: Document, options: ProcessOptions) {
 }
 
 export function process(htmlContent: Document, parseResult: DefuddleResponse, options: ProcessOptions): HTMLElement | null {
-    let rawElementsUnfiltered = htmlContent.querySelector('[lang]')?.children;
+    function getNonContainerElements(element: Element): Array<Element> {
+        const containerTags = ['BODY', 'DIV', 'SPAN', 'ARTICLE', 'MAIN'];
+        if (containerTags.includes(element.tagName)) {
+            return [...element.children].flatMap(getNonContainerElements)
+        }
+
+        return [element];
+    }
+
+    let rawElementsUnfiltered = getNonContainerElements(htmlContent.body);
     if (!rawElementsUnfiltered) {
         return null;
     }
@@ -41,8 +50,6 @@ export function process(htmlContent: Document, parseResult: DefuddleResponse, op
     if (options.proxyLink) {
         postprocessRemainingLinks(elements, options.proxyLink);
     }
-
-    removeUnnecessaryDivs(elements);
 
     return <div class="engros">
         {buildSlides(elements)}
@@ -136,25 +143,25 @@ function preprocessHeaders(
     }
 }
 
-function removeUnnecessaryDivs(elements: HTMLElement[]) {
-    // Remove divs that have text leaves
-
-    const newElements: HTMLElement[] = elements
-        .map(element => {
-            if (element.tagName !== 'DIV') return [element];
-
-            for (let node of element.childNodes) {
-                if (node.nodeType === Node.TEXT_NODE && node.textContent?.trim().length) {
-                    return [element];
-                }
-            }
-
-            return [...element.children] as HTMLElement[];
-        })
-        .flat()
-    ;
-
-    console.log(newElements)
-
-    elements.splice(0, elements.length, ...newElements);
-}
+// function removeUnnecessaryDivs(elements: HTMLElement[]) {
+//     // Remove divs that have text leaves
+//
+//     const newElements: HTMLElement[] = elements
+//         .map(element => {
+//             if (element.tagName !== 'DIV') return [element];
+//
+//             for (let node of element.childNodes) {
+//                 if (node.nodeType === Node.TEXT_NODE && node.textContent?.trim().length) {
+//                     return [element];
+//                 }
+//             }
+//
+//             return [...element.children] as HTMLElement[];
+//         })
+//         .flat()
+//     ;
+//
+//     console.log(newElements)
+//
+//     elements.splice(0, elements.length, ...newElements);
+// }

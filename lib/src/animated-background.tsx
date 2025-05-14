@@ -26,8 +26,6 @@ export function addBackground(element: HTMLElement) {
   const hash = (element.textContent ?? '').length;
   const initializeAnimation = functions[hash % functions.length];
 
-  console.log('Using background function', initializeAnimation);
-
   let destroyAnimation: (() => void) | null = null;
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
