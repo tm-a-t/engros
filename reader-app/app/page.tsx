@@ -1,6 +1,8 @@
 import Image from "next/image";
 import HomeForm from '@/components/home-form';
 import InstallButton from '@/components/install-button';
+import RSSPool from '@/components/rss';
+
 
 export default function Home() {
   return (
@@ -12,6 +14,9 @@ export default function Home() {
           <p>Paste a link to an article and read it as engaging narrative</p>
         </div>
         <HomeForm/>
+          <h1>Latest from around the web</h1>
+
+          <RSSPool />
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <InstallButton/>
