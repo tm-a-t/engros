@@ -56,7 +56,7 @@
       },
       "require": {
         "types": "./dist/node.d.ts",
-        "default": "./dist/node .umd.cjs"
+        "default": "./dist/node.umd.cjs"
       }
     },
     "./style.css": "./dist/style.css"
