@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Reader",
+  title: "Scholar.Love",
   description: "Paste a link to an article to convert in to an engaging narrative",
 };
 

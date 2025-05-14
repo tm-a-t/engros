@@ -1,24 +1,24 @@
 /* eslint-disable no-console */
 import Parser from 'rss-parser';
-import { Readability } from '@mozilla/readability';
-import { JSDOM } from 'jsdom';
+import {Readability} from '@mozilla/readability';
+import {JSDOM} from 'jsdom';
 import React from 'react';
 
 /* ──────────────────────────────────────────────────────────────────────────
    Types
 ────────────────────────────────────────────────────────────────────────── */
 type BaseItem = {
-    Title:   string;
-    Author:  string;
-    Link:    string;
-    Source:  string;           // arXiv / Hacker News / LessWrong
+    Title: string;
+    Author: string;
+    Link: string;
+    Source: string;           // arXiv / Hacker News / LessWrong
 };
 
 type LLMData = {
-    llm_summary:       string;
-    llm_author:        string;
-    llm_complexity:    'deep';
-    llm_overview:      string;
+    llm_summary: string;
+    llm_author: string;
+    llm_complexity: 'deep';
+    llm_overview: string;
     llm_entertainment: string;
 };
 
@@ -28,7 +28,7 @@ export type Item = BaseItem & Partial<LLMData>;
    Helpers – RSS
 ────────────────────────────────────────────────────────────────────────── */
 const parser = new Parser({
-    customFields: { item: ['author', 'dc:creator'] },
+    customFields: {item: ['author', 'dc:creator']},
 });
 
 const normalise = (
@@ -36,12 +36,12 @@ const normalise = (
     source: string,
     authorFallback: string,
 ): BaseItem => ({
-    Title:  rssItem.title?.trim() ?? 'Untitled',
-    Author:(rssItem.creator ??
+    Title: rssItem.title?.trim() ?? 'Untitled',
+    Author: (rssItem.creator ??
         rssItem['dc:creator'] ??
         rssItem.author ??
         authorFallback).trim(),
-    Link:   rssItem.link,
+    Link: rssItem.link,
     Source: source,
 });
 
@@ -80,7 +80,7 @@ const fetchArxiv = async (): Promise<BaseItem[]> => {
 const fetchHackerNews = () =>
     fetchFeed('https://news.ycombinator.com/rss', 10, 'Hacker News', 'HackerNews');
 
-const fetchLessWrong  = () =>
+const fetchLessWrong = () =>
     fetchFeed('http://lesserwrong.com/feed.xml', 10, 'LessWrong', 'LessWrong');
 
 /* ──────────────────────────────────────────────────────────────────────────
@@ -89,7 +89,7 @@ const fetchLessWrong  = () =>
 async function getReadableText(url: string): Promise<string> {
     try {
         const html = await (await fetch(url)).text();
-        const dom  = new JSDOM(html, { url });
+        const dom = new JSDOM(html, {url});
         const reader = new Readability(dom.window.document);
         const article = reader.parse();
 
@@ -132,21 +132,21 @@ Article:
                 model: 'mistralai/mistral-7b-instruct',
                 temperature: 0.2,
                 messages: [
-                    { role: 'system', content: 'You are a concise helpful assistant.' },
-                    { role: 'user',   content: prompt },
+                    {role: 'system', content: 'You are a concise helpful assistant.'},
+                    {role: 'user', content: prompt},
                 ],
             }),
         });
 
-        const data  = await res.json();
-        const raw   = data.choices?.[0]?.message?.content ?? '{}';
-        const json  = JSON.parse(raw);
+        const data = await res.json();
+        const raw = data.choices?.[0]?.message?.content ?? '{}';
+        const json = JSON.parse(raw);
 
         return {
-            llm_summary:       json.summary       ?? '',
-            llm_author:        json.author        ?? '',
-            llm_complexity:    (json.complexity   ?? 'deep') as 'deep',
-            llm_overview:      json.overview      ?? '',
+            llm_summary: json.summary ?? '',
+            llm_author: json.author ?? '',
+            llm_complexity: (json.complexity ?? 'deep') as 'deep',
+            llm_overview: json.overview ?? '',
             llm_entertainment: json.entertainment ?? '',
         };
     } catch (err) {
@@ -168,20 +168,20 @@ async function buildPool(): Promise<Item[]> {
         fetchLessWrong(),
     ]).then(arr => arr.flat());
 
-    const queue   = [...basics];
+    const queue = [...basics];
     const output: Item[] = [];
     const MAX_CONCURRENT = 3;
 
     const worker = async () => {
-        for (;;) {
+        for (; ;) {
             const next = queue.shift();
             if (!next) return;
             const llm = await summarise(next);
-            output.push({ ...next, ...llm });
+            output.push({...next, ...llm});
         }
     };
 
-    await Promise.all(Array.from({ length: MAX_CONCURRENT }, worker));
+    await Promise.all(Array.from({length: MAX_CONCURRENT}, worker));
     return output;
 }
 
@@ -192,20 +192,20 @@ export default async function RSSPool() {
     const pool = await buildPool();
 
     return (
-        <section className="space-y-3">
-            <h2 className="text-lg font-semibold">Latest (all sources)</h2>
-
-            <ul className="list-disc list-inside space-y-2">
+        <section className="">
+            <ul className="">
                 {pool.map(item => (
-                    <li key={item.Link}>
-                        <a href={item.Link} target="_blank" className="hover:underline font-medium">
-                            {item.Title}
-                        </a>{' '}
-                        <span className="text-sm text-gray-500">[{item.Source}]</span>
-                        {item.llm_summary && (
-                            <p className="text-sm mt-0.5">💡 {item.llm_summary}</p>
+                    <a key={item.Link} href={'/' + item.Link} className="block rounded-xl bg-fuchsia-200 p-4 font-medium mb-1.5">
+                        {item.llm_overview && (
+                            <p className="mb-2">{item.llm_overview}</p>
                         )}
-                    </li>
+
+                        <div className="pl-2 pt-0.5 pb-1 border-l-2 border-fuchsia-300 leading-5">
+                            <div className="text-sm text-fuchsia-700">{item.Source}</div>
+
+                            <h3 className="font-bold">{item.Title}</h3>
+                        </div>
+                    </a>
                 ))}
             </ul>
         </section>

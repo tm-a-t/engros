@@ -14,7 +14,7 @@ export default function Viewer({originalHTML, url}: {originalHTML: string, url: 
       return
     }
 
-    let content = engros(originalHTML, url, origin + '/')
+    let content = engros(originalHTML, {referenceLink: url, proxyLink: origin +'/'})
     if (content === null) {
       content = document.createElement("div");
       content.style.textAlign = "center";

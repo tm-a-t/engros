@@ -14,13 +14,12 @@
 /*  }*/
 /*}*/
 
-:root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
-}
+/*:root {*/
+/*  --background: #0a0a0a;*/
+/*  --foreground: #ededed;*/
+/*}*/
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  @apply bg-fuchsia-100 text-fuchsia-950;
   font-family: Arial, Helvetica, sans-serif;
 }
