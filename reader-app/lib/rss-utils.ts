@@ -10,6 +10,7 @@ export type BaseItem = {
     Author: string;
     Link: string;
     Source: string;           // arXiv / Hacker News / LessWrong
+    Date: string;
 };
 
 export type LLMData = {
@@ -42,6 +43,7 @@ const normalise = (
         authorFallback).trim(),
     Link: rssItem.link,
     Source: source,
+    Date: rssItem.isoDate,
 });
 
 async function fetchFeed(
@@ -165,12 +167,10 @@ export async function buildPool(offset: number = 0, limit: number = 10): Promise
         fetchArxiv(),
         fetchHackerNews(),
         fetchLessWrong(),
-    ]).then(arr => arr.flat());
+    ]).then(arr => arr.flat().sort((a, b) => b.Date.localeCompare(a.Date)));
 
     // Apply pagination to the basic items
     const paginatedBasics = basics.slice(offset, offset + limit);
-
-    console.log(paginatedBasics)
 
     const queue = [...paginatedBasics];
     const output: Item[] = [];
@@ -187,15 +187,4 @@ export async function buildPool(offset: number = 0, limit: number = 10): Promise
 
     await Promise.all(Array.from({length: MAX_CONCURRENT}, worker));
     return output;
-}
-
-// Get the total count of items without processing them
-export async function getTotalItemsCount(): Promise<number> {
-    const basics = await Promise.all([
-        fetchArxiv(),
-        fetchHackerNews(),
-        fetchLessWrong(),
-    ]).then(arr => arr.flat());
-    
-    return basics.length;
 }

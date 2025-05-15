@@ -14,10 +14,10 @@ export default function HomeForm() {
   }
 
   return (
-    <Form action={go} className="flex flex-wrap w-full bg-fuchsia-300">
+    <Form action={go} className="flex flex-wrap items-center pr-2 w-full bg-gray-950 rounded-xl">
       <input ref={inputRef} placeholder="https://example.com"
-             className="flex-grow box-border bg-transparent h-12 px-2 text-lg placeholder:text-fuchsia-300 outline-0 focus:border-fuchsia-400"/>
-      <button className="bg-white h-10 px-4 text-lg font-medium rounded-lg text-black">Go</button>
+             className="flex-grow box-border bg-transparent h-14 pl-4 text-lg placeholder:text-gray-600 outline-0 focus:border-fuchsia-400"/>
+      <button className="bg-white h-10 px-6 text-lg font-medium rounded-lg text-black">Go</button>
     </Form>
   );
 }
