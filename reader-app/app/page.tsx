@@ -1,8 +1,6 @@
 'use client';
 
-import Image from "next/image";
 import HomeForm from '@/components/home-form';
-import InstallButton from '@/components/install-button';
 import RSSPool from '@/components/rss';
 import { useState } from 'react';
 
@@ -20,7 +18,7 @@ export default function Home() {
         <div
             className="mx-auto w-[32rem] max-w-full min-h-screen pb-20 gap-16 font-[family-name:var(--font-geist-sans)]">
             <main>
-                <h4 className="px-4 mt-6"><span className="font-bold">Scholar.Love</span> • Fun article reader</h4>
+                <h4 className="px-4 mt-6"><span className="font-bold">Scholar.Love</span> • Gen Z article reader</h4>
                 <div className="mx-4 mt-48 mb-8">
                     <h1 className="text-4xl font-extrabold mb-1">Good evening</h1>
                     <p className="text-xl">What are you going to read today?</p>
@@ -33,7 +31,7 @@ export default function Home() {
                         {categories.map((category) => (
                             <label 
                                 key={category}
-                                className={`bg-gray-800 rounded-full px-4 py-3 flex items-center cursor-pointer ${selectedCategory === category ? 'bg-fuchsia-400 text-zinc-950' : ''}`}
+                                className={`rounded-full px-4 py-3 flex items-center cursor-pointer ${selectedCategory === category ? 'bg-fuchsia-400 text-gray-950' : 'bg-gray-800'}`}
                             >
                                 <input
                                     type="radio"
