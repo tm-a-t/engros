@@ -5,8 +5,8 @@ import RSSPool from '@/components/rss';
 import React, { useState } from 'react';
 
 export default function Home() {
-    const categories = ['Gadgets', 'Papers', 'News', 'Tech', 'Science'];
-    const [selectedCategory, setSelectedCategory] = useState<string>('Gadgets');
+    const categories = ['All', 'Papers', 'News', 'Tech', 'Science'];
+    const [selectedCategory, setSelectedCategory] = useState<string>('All');
 
     const handleCategoryChange = (category: string) => {
         setSelectedCategory(category);

@@ -74,8 +74,8 @@ export default function RSSPoolClient({
                     <a href={'/' + item.Link} className="block px-4 py-4 hover:bg-gray-700">
                         <span className="text-sm text-gray-400 mb-2 block">{new Intl.DateTimeFormat("en-US").format(new Date(item.Date))}</span>
 
-                        {item.llm_overview && (
-                            <p className="mb-4">{item.llm_overview}</p>
+                        {item.llm_intro && (
+                            <p className="mb-4">{item.llm_intro}</p>
                         )}
 
                         <div className="rounded-xl bg-gray-800 p-4 leading-5 -mx-0.5">

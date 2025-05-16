@@ -18,7 +18,7 @@ export type LLMData = {
     llm_author: string;
     llm_complexity: 'deep';
     llm_overview: string;
-    llm_entertainment: string;
+    llm_intro: string;
 };
 
 export type Item = BaseItem & Partial<LLMData>;
@@ -113,9 +113,9 @@ summary        – 1 sentence
 author         – original author / blog
 complexity     – ALWAYS the string "deep"
 overview       – 1-sentence wider context
-entertainment  – 1-sentence fun remark
+intro          – 1-sentence introductory tweet, neutral tone, don't use hashtags
 Example:
-{"summary":"...","author":"...","complexity":"deep","overview":"...","entertainment":"..."}
+{"summary":"...","author":"...","complexity":"deep","overview":"...","intro":"..."}
 Article:
 """${articleText}"""
 `.trim();
@@ -148,13 +148,13 @@ Article:
             llm_author: json.author ?? '',
             llm_complexity: (json.complexity ?? 'deep') as 'deep',
             llm_overview: json.overview ?? '',
-            llm_entertainment: json.entertainment ?? '',
+            llm_intro: json.intro ?? '',
         };
     } catch (err) {
         console.error('LLM error on', item.Link, err);
         return {
             llm_summary: '', llm_author: '', llm_complexity: 'deep',
-            llm_overview: '', llm_entertainment: '',
+            llm_overview: '', llm_intro: '',
         };
     }
 }
