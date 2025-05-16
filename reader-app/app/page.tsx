@@ -2,7 +2,7 @@
 
 import HomeForm from '@/components/home-form';
 import RSSPool from '@/components/rss';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 export default function Home() {
     const categories = ['Gadgets', 'Papers', 'News', 'Tech', 'Science'];
@@ -18,20 +18,22 @@ export default function Home() {
         <div
             className="mx-auto w-[32rem] max-w-full min-h-screen pb-20 gap-16 font-[family-name:var(--font-geist-sans)]">
             <main>
-                <h4 className="px-4 mt-6"><span className="font-bold">Scholar.Love</span> • Gen Z article reader</h4>
-                <div className="mx-4 mt-48 mb-8">
-                    <h1 className="text-4xl font-extrabold mb-1">Good evening</h1>
-                    <p className="text-xl">What are you going to read today?</p>
-                    <div className="mt-4 -mx-1">
+                {/*<h4 className="px-4 mt-6 mb-12 font-extrabold text-center"><span className="text-fuchsia-300">Scholar.Love,</span> Gen Z reading app</h4>*/}
+                <div className="px-4 mt-64 mb-8 font-extrabold flex flex-col text-5xl text-gray-500"><h4 className="text-fuchsia-300">Scholar.Love</h4> <span>Gen Z reading app</span></div>
+                <div className="mx-4 mb-16">
+                    <div className="-mx-0.5">
                         <HomeForm/>
                     </div>
+                </div>
+                <div className="mx-4 ">
+                    <h2 className="font-extrabold text-xl mb-4">Latest on the web</h2>
                 </div>
                 <div>
                     <div className="flex px-3 gap-2 mb-4 overflow-x-scroll">
                         {categories.map((category) => (
                             <label 
                                 key={category}
-                                className={`rounded-full px-4 py-3 flex items-center cursor-pointer ${selectedCategory === category ? 'bg-fuchsia-400 text-gray-950' : 'bg-gray-800'}`}
+                                className={`rounded-full px-4 py-3 flex items-center cursor-pointer ${selectedCategory === category ? 'bg-fuchsia-300 text-gray-950' : 'bg-gray-800'}`}
                             >
                                 <input
                                     type="radio"

@@ -15,9 +15,9 @@ export default function HomeForm() {
 
   return (
     <Form action={go} className="flex flex-wrap items-center pr-2 w-full bg-gray-950 rounded-xl">
-      <input ref={inputRef} placeholder="https://example.com"
-             className="flex-grow box-border bg-transparent h-14 pl-4 text-lg placeholder:text-gray-600 outline-0 focus:border-fuchsia-400"/>
-      <button className="bg-white h-10 px-6 text-lg font-medium rounded-lg text-black">Go</button>
+      <input ref={inputRef} placeholder="Paste article link"
+             className="flex-grow box-border bg-transparent h-16 pl-4 text-lg placeholder:text-gray-500 outline-0 focus:border-fuchsia-400"/>
+      <button className="bg-white h-12 px-6 text-lg font-medium rounded-lg text-black">Go</button>
     </Form>
   );
 }

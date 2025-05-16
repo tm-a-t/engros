@@ -55,9 +55,20 @@ export default function RSSPoolClient({
         };
     }, [loading, offset, initialLimit, loadMorePosts]);
 
+    const banner = <>
+        <hr className="border-gray-800 mx-1"/>
+        <div className="px-4 py-4">
+            <div className="rounded-xl bg-gray-800 ring-1 ring-fuchsia-300 p-4 -mx-0.5">
+                <h3 className="font-extrabold text-fuchsia-300 text-xl mt-2 mb-3 leading-6">How to open custom pages in Scholar.Love</h3>
+                <p className="mb-2">From your browser: Type <span className="font-bold">scholar.love/</span> in front of a URL.</p>
+                <p>From the app: Install Scholar.Love to your homescreen (Share › Add to homescreen). Then you can send a link from any app to open it here!</p>
+            </div>
+        </div>
+    </>
+
     return (
         <section className="">
-            {posts.map(item => (
+            {posts.map((item, index) => (
                 <div key={item.Link}>
                     <hr className="border-gray-800 mx-1"/>
                     <a href={'/' + item.Link} className="block px-4 py-4 hover:bg-gray-700">
@@ -73,6 +84,7 @@ export default function RSSPoolClient({
                             <h3 className="font-bold">{item.Title}</h3>
                         </div>
                     </a>
+                    {index === 5 && banner}
                 </div>
             ))}
 
