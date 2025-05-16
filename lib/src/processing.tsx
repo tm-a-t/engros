@@ -12,8 +12,8 @@ export type ProcessOptions = {
 export function preprocessDocument(html: Document, options: ProcessOptions) {
     preprocessHeaders(html);
 
-    if (!document.querySelector('base')) {
-        document.head.insertBefore(<base href={options.referenceLink}/>, document.head.firstChild);
+    if (!html.querySelector('base')) {
+        html.head.insertBefore(<base href={options.referenceLink}/>, html.head.firstChild);
     }
 }
 
