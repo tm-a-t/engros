@@ -30,6 +30,13 @@ const parser = new Parser({
     customFields: {item: ['author', 'dc:creator']},
 });
 
+/* Convert https://arxiv.org/abs/<id> → https://arxiv.org/html/<id> */
+const transformArxivLink = (link: string): string => {
+    if (!link) return link;
+    const m = link.match(/^https?:\/\/(?:www\.)?arxiv\.org\/abs\/([^?#]+)/i);
+    return m ? `https://arxiv.org/html/${m[1]}` : link;
+};
+
 const normalise = (
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     rssItem: any,
@@ -46,6 +53,7 @@ const normalise = (
     Date: rssItem.isoDate,
 });
 
+
 async function fetchFeed(
     url: string,
     limit: number,
@@ -57,6 +65,12 @@ async function fetchFeed(
         .slice(0, limit)
         .map(i => normalise(i, source, authorFallback ?? feed.title ?? 'Unknown'));
 }
+
+
+/* ──────────────────────────────────────────────────────────────────────────
+   Helpers – RSS
+────────────────────────────────────────────────────────────────────────── */
+
 
 /* ──────────────────────────────────────────────────────────────────────────
    Site-specific fetchers
@@ -72,6 +86,12 @@ const fetchArxiv = async (): Promise<BaseItem[]> => {
                 'arXiv',
                 cat,
             );
+
+            /* Rewrite /abs/ → /html/ for every item */
+            items.forEach(item => {
+                item.Link = transformArxivLink(item.Link);
+            });
+
             out.push(...items);
         }),
     );
