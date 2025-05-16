@@ -20,7 +20,7 @@ export default function RSSPoolClient({
         setLoading(true);
         try {
             // Use fetch to call an API endpoint that will return more posts
-            const response = await fetch(`/api/rss?offset=${offset}&limit=${initialLimit}`);
+            const response = await fetch(`/api/rss?offset=${offset}&limit=${initialLimit}`, { cache: 'force-cache' });
             const newPosts = await response.json();
 
             setPosts(prevPosts => [...prevPosts, ...newPosts]);
