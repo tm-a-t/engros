@@ -98,6 +98,18 @@
         row-gap: 1rem;
     }
 
+    .engros-animated:not(.visible) {
+        @apply opacity-0 translate-y-2;
+    }
+
+    .engros-animated {
+        @apply opacity-100 translate-y-0 transition duration-300 delay-500;
+    }
+
+    .engros-animated:nth-child(1) { @apply delay-100; }
+    .engros-animated:nth-child(2) { @apply delay-200; }
+    .engros-animated:nth-child(3) { @apply delay-300; }
+
     .engros-slide canvas {
         @apply absolute top-0 bottom-0 left-0 right-0 -z-10;
     }

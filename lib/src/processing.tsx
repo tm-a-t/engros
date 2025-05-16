@@ -19,7 +19,7 @@ export function preprocessDocument(html: Document, options: ProcessOptions) {
 
 export function process(htmlContent: Document, parseResult: DefuddleResponse, options: ProcessOptions): HTMLElement | null {
     function getNonContainerElements(element: Element): Array<Element> {
-        const containerTags = ['BODY', 'DIV', 'SPAN', 'ARTICLE', 'MAIN'];
+        const containerTags = ['BODY', 'DIV', 'SPAN', 'ARTICLE', 'MAIN', 'SECTION', 'TITLE'];
         if (containerTags.includes(element.tagName)) {
             return [...element.children].flatMap(getNonContainerElements)
         }
