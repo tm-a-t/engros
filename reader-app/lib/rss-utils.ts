@@ -133,7 +133,7 @@ summary        – 1 sentence
 author         – original author / blog
 complexity     – ALWAYS the string "deep"
 overview       – 1-sentence wider context
-intro          – 1-sentence introductory tweet, neutral tone, don't use hashtags
+intro          – 1-sentence introductory tweet, neutral tone, never use hashtags
 Example:
 {"summary":"...","author":"...","complexity":"deep","overview":"...","intro":"..."}
 Article:
@@ -168,7 +168,7 @@ Article:
             llm_author: json.author ?? '',
             llm_complexity: (json.complexity ?? 'deep') as 'deep',
             llm_overview: json.overview ?? '',
-            llm_intro: json.intro ?? '',
+            llm_intro: json.intro?.replace(/#[\w-]+/g, '').trim() ?? '',  // todo: prompt better to remove hashtags
         };
     } catch (err) {
         console.error('LLM error on', item.Link, err);

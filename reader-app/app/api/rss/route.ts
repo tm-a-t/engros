@@ -8,7 +8,9 @@ export async function GET(request: NextRequest) {
 
   try {
     const posts = await buildPool(offset, limit);
-    return NextResponse.json(posts);
+    const response = NextResponse.json(posts);
+    response.headers.set('Cache-Control', 's-maxage=300, stale-while-revalidate=30');
+    return response;
   } catch (error) {
     console.error('Error fetching RSS posts:', error);
     return NextResponse.json({ error: 'Failed to fetch posts' }, { status: 500 });

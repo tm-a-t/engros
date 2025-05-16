@@ -2,6 +2,7 @@
 
 import React, {useState} from 'react';
 import {v4 as uuidv4} from 'uuid';
+import {TableOfContents} from "lucide-react";
 
 /* ──────────────────────────────────────────────────────────────
    Types
@@ -108,9 +109,9 @@ export function OutlineDrawer({outline}: {outline: OutlineNode[]}) {
         <>
             <button
                 onClick={() => setOpen(o => !o)}
-                className="fixed right-4 top-4 z-40 bg-fuchsia-600 text-white px-3 py-1 rounded shadow-lg hover:bg-fuchsia-500"
+                className="fixed z-40 rounded-full px-4 py-2 flex items-center bg-gray-900 text-fuchsia-300 right-2 top-2"
             >
-                {open ? '✕ Close outline' : '🗒 AI outline'}
+                {open ? '×' : <TableOfContents />}
             </button>
 
             {open && (
