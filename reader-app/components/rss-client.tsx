@@ -22,7 +22,8 @@ export default function RSSPoolClient({
             // Use fetch to call an API endpoint that will return more posts
             const response = await fetch(`/api/rss?offset=${offset}&limit=${initialLimit}`);
             const newPosts = await response.json();
-
+            if (!newPosts) return;
+            console.log(newPosts)
             setPosts(prevPosts => [...prevPosts, ...newPosts]);
             setOffset(prevOffset => prevOffset + newPosts.length);
         } catch (error) {
